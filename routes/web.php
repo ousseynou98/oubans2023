@@ -8,6 +8,7 @@ use App\Http\Controllers\Security\PermissionController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\MovieController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SliderController;
 
 
 /*
@@ -37,8 +38,9 @@ Route::group(['middleware' => 'auth'], function () {
 
 // Frontent Rounts
 Route::group(['prefix' => ''], function() {
+  //Route::get('/', [FrontendController::class, 'index'])->name('frontend.home');
   Route::get('/', [FrontendController::class, 'index'])->name('frontend.home');
-  Route::get('/movie', [FrontendController::class, 'movie'])->name('frontend.movie');
+  Route::get('/movie', [MovieController::class, 'indexFront'])->name('frontend.movie');
   Route::get('/show', [FrontendController::class, 'show'])->name('frontend.show');
   Route::get('/about', [FrontendController::class, 'about'])->name('frontend.about');
   Route::get('/contact', [FrontendController::class, 'contact'])->name('frontend.contact');
@@ -50,7 +52,8 @@ Route::group(['prefix' => ''], function() {
   Route::get('/settings', [FrontendController::class, 'settings'])->name('frontend.settings');
   Route::get('/forgotpassword', [FrontendController::class, 'forgotpassword'])->name('frontend.forgotpassword');
   Route::get('/moviedetails', [FrontendController::class, 'moviedetails'])->name('frontend.moviedetails');
-  Route::get('/showdetails', [FrontendController::class, 'showdetails'])->name('frontend.showdetails');
+  Route::get('showdetails/{id}', [MovieController::class, 'showdetails'])->name('showdetails');
+  //Route::get('movie-edit/{id}', [MovieController::class, 'update'])->name('dashboard.editMovie');
   Route::get('/showsingle', [FrontendController::class, 'showsingle'])->name('frontend.showsingle');
   Route::get('/watchvideo', [FrontendController::class, 'watchvideo'])->name('frontend.watchvideo');
   Route::get('/blog', [FrontendController::class, 'blog'])->name('frontend.blog');
@@ -67,10 +70,20 @@ Route::group(['prefix' => 'dashboards','middleware' => 'auth'], function() {
   Route::get('/add-category', [DashboardController::class, 'addCategory'])->name('dashboard.addCategory');
   Route::get('/category-list', [DashboardController::class, 'categoryList'])->name('dashboard.categoryList');
 
+  Route::get('/slider', [SliderController::class, 'index'])->name('dashboard.slider');
+  Route::get('/add-slide', [SliderController::class, 'addSlide'])->name('dashboard.addSlide');
+  Route::post('/store_slide', [SliderController::class, 'store'])->name('dashboard.storeSlide');
+  Route::get('slide-edit/{id}', [SliderController::class, 'update'])->name('dashboard.editSlide');
+  Route::put('/update_saving_slide/{id}', [SliderController::class, 'updateSaving'])->name('dashboard.updateSavingSlide');
+  Route::delete('/slides/{id}', [SliderController::class, 'deleteSlide'])->name('dashboard.deleteSlide');
+
+
   Route::get('/add-movie', [MovieController::class, 'addMovie'])->name('dashboard.addMovie');
   Route::post('/store_movie', [MovieController::class, 'store'])->name('dashboard.storeMovie');
   Route::get('/movie-list', [MovieController::class, 'index'])->name('dashboard.movieList');
   Route::get('/movie-show/{id}', [MovieController::class, 'show'])->name('dashboard.showMovie');
+  Route::get('movie-edit/{id}', [MovieController::class, 'update'])->name('dashboard.editMovie');
+  Route::post('/update_saving_movie', [MovieController::class, 'updateSaving'])->name('dashboard.updateSavingMovie');
   
   Route::get('/add-show', [DashboardController::class, 'addShow'])->name('dashboard.addShow');
   Route::get('/show-list', [DashboardController::class, 'showList'])->name('dashboard.showList');

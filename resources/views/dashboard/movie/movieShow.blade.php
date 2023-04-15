@@ -5,7 +5,7 @@
                 <div class="card">
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <h4 class="card-title">Détails du film</h4>
-                        <a href="" class="btn btn-danger">Retour</a>
+                        <a href="/dashboards/movie-list" class="btn btn-danger">Retour</a>
                     </div>
                     <div class="card-body">
                         <div class="row">
@@ -30,13 +30,13 @@
                 <div class="card">
                     <div class="card-header">
                         <h4 class="card-title">Vidéo</h4>
-</div>
-<div class="card-body">
-<div class="embed-responsive embed-responsive-16by9">
-<iframe class="embed-responsive-item" src="{{ $movie[0]->video }}" allowfullscreen></iframe>
-</div>
-</div>
-</div>
+                    </div>
+                <div class="card-body">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="{{ asset('assets/films/videos/'.$movie[0]->video) }}" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 </div>
 </div>
 </div>

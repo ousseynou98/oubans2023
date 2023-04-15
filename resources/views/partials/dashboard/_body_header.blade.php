@@ -9,7 +9,7 @@
                 <a href="index.html" class="header-logo">
                    <img src="{{ asset('dashboard/images/logo.png') }}" class="img-fluid rounded-normal" alt="">
                    <div class="logo-title">
-                      <span class="text-primary text-uppercase">Streamit</span>
+                      <span class="text-primary text-uppercase">Oubans</span>
                    </div>
                 </a>
              </div>

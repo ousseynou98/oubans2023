@@ -23,47 +23,44 @@
                         <div class="menu-footer-link-1-container">
                             <ul id="menu-footer-link-1" class="menu p-0">
                                 <li id="menu-item-7314" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7314">
-                                    <a href="#">Terms Of Use</a>
+                                    <a href="#">Conditions d'utilisation</a>
                                 </li>
                                 <li id="menu-item-7316" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7316">
-                                    <a href="{{route('frontend.privacypolicy')}}">Privacy-Policy</a>
+                                    <a href="{{route('frontend.privacypolicy')}}">Politique de confidentialité</a>
                                 </li>
                                 <li id="menu-item-7118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7118">
                                    <a href="{{route('frontend.faq')}}">FAQ</a>
                                </li>
-                                <li id="menu-item-7118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7118">
-                                    <a href="{{route('frontend.watchvideo')}}">Watch List</a>
-                                </li>
+                                
                             </ul>
                         </div>
                     </div>
                     <div class="widget text-left">			
                         <div class="textwidget">
-                            <p><small>© 2021 STREAMIT. All Rights Reserved. All videos and shows on this platform are trademarks of, and all related images and content are the property of, Streamit Inc. Duplication and copy of this is strictly prohibited. All rights reserved.</small></p>
+                            <p><small>© 2022 OUBANS. Tous les droits sont réservés. Toutes les vidéos et émissions sur cette plate-forme sont des marques déposées de, et toutes les images et contenus associés sont la propriété des producteurs ou  Oubans. La duplication et la copie de ceci sont strictement interdites. Tous les droits sont réservés.</small></p>
                         </div>
                     </div>                        
                 </div>
                 <div class="col-lg-2 col-md-6 mt-4 mt-lg-0">
                     <h6 class="footer-link-title">
-                        Follow Us :
+                    Suivez-nous :
                     </h6>
                     <ul class="info-share"> 
                         <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
                         <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a target="_blank" href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a target="_blank" href="#"><i class="fa fa-github"></i></a></li>
+                        <li><a target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
                     </ul>
 
                 </div>
                 <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
                     <div class="widget text-left">
                         <div class="textwidget">
-                            <h6 class="footer-link-title">Streamit App</h6>
+                            <h6 class="footer-link-title"></h6>
                             <div class="d-flex align-items-center">
                                 <a class="app-image" href="#">
-                                    <img src="{{asset('frontend/images/footer/01.jpg')}}" alt="play-store">
+                                    <img src="{{asset('frontend/images/logo.png')}}" alt="play-store"  width="160" height="60">
                                 </a><br>
-                                <a class="ml-3 app-image" href="#"><img src="{{asset('frontend/images/footer/02.jpg')}}" alt="app-store"></a>
+                                <a class="ml-3 app-image" href="ehodcorp.com"><img src="{{asset('frontend/images/ehodcorp.png')}}" alt="app-store" width="60" height="60"></a>
                             </div>
                         </div>
                     </div>

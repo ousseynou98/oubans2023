@@ -1790,7 +1790,7 @@ $(document).ready(function() {
         width: 250,
           type: 'donut',
         },
-        colors:['#e20e02', '#f68a04', '#007aff','#545e75'],
+        colors:['#c244b0', '#f68a04', '#007aff','#545e75'],
         labels: ["New Customer", "Exsisting Subscriber's", "Daily Visitor's", "Extented Subscriber's"],
         dataLabels: {
           enabled: false
@@ -1828,7 +1828,7 @@ $(document).ready(function() {
           width: 250,
           type: 'donut',
         },
-        colors:['#e20e02','#83878a', '#007aff','#f68a04', '#14e788','#545e75'],
+        colors:['#c244b0','#83878a', '#007aff','#f68a04', '#14e788','#545e75'],
         labels: ['Actions', 'Comedy', 'Harror', 'Drama', 'Kids','Thrilled'],
         dataLabels: {
           enabled: false
@@ -1870,7 +1870,7 @@ $(document).ready(function() {
           name: 'Last Month',
           data: [35, 41,20,40]
         }],
-        colors:['#e20e02', '#007aff'],
+        colors:['#c244b0', '#007aff'],
           chart: {
           type: 'bar',
           height: 230,

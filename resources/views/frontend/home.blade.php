@@ -65,9 +65,9 @@
                            </div>
                        </div>
                           <div class="d-flex align-items-center r-mb-23" data-animation-in="fadeInUp" data-delay-in="1.2">
-                             <a href="{{route('frontend.showdetails')}}" class="btn btn-hover iq-button"><i class="fa fa-play mr-2"
+                             <a href="#" class="btn btn-hover iq-button"><i class="fa fa-play mr-2"
                                 aria-hidden="true"></i>Play Now</a>
-                             <a href="{{route('frontend.showdetails')}}" class="btn btn-link">More details</a>
+                             <a href="#" class="btn btn-link">More details</a>
                           </div>
                        </div>
                     </div>
@@ -312,7 +312,7 @@
                                       <img src="{{asset('frontend/images/favorite/02.jpg')}}" class="img-fluid" alt="">
                                    </div>
                                    <div class="block-description">
-                                      <h6 class="iq-title"><a href="{{route('frontend.showdetails')}}">Last Race</a></h6>
+                                      <h6 class="iq-title"><a href="#">Last Race</a></h6>
                                       <div class="movie-time d-flex align-items-center my-2 iq-ltr-direction">
                                          <div class="badge badge-secondary p-1 mr-2">7+</div>
                                          <span class="text-white">2 Seasons</span>
@@ -392,7 +392,7 @@
                                       <img src="{{asset('frontend/images/favorite/04.png')}}" class="img-fluid" alt="">
                                    </div>
                                    <div class="block-description">
-                                      <h6 class="iq-title"><a href="{{route('frontend.showdetails')}}">Dino Land</a></h6>
+                                      <h6 class="iq-title"><a href="#">Dino Land</a></h6>
                                       <div class="movie-time d-flex align-items-center my-2 iq-ltr-direction">
                                          <div class="badge badge-secondary p-1 mr-2">18+</div>
                                          <span class="text-white">3 Seasons</span>
@@ -431,7 +431,7 @@
                                       <img src="{{asset('frontend/images/favorite/05.jpg')}}" class="img-fluid" alt="">
                                    </div>
                                    <div class="block-description">
-                                      <h6 class="iq-title"><a href="{{route('frontend.showdetails')}}">Jaction action</a></h6>
+                                      <h6 class="iq-title"><a href="#">Jaction action</a></h6>
                                       <div class="movie-time d-flex align-items-center my-2 iq-ltr-direction">
                                          <div class="badge badge-secondary p-1 mr-2">10+</div>
                                          <span class="text-white">1 Season</span>
@@ -900,7 +900,7 @@
                                       <img src="{{asset('frontend/images/suggested/02.jpg')}}" class="img-fluid" alt="">
                                    </div>
                                    <div class="block-description">
-                                      <h6 class="iq-title"><a href="{{route('frontend.showdetails')}}">Jumbo Queen</a></h6>
+                                      <h6 class="iq-title"><a href="#">Jumbo Queen</a></h6>
                                       <div class="movie-time d-flex align-items-center my-2 iq-ltr-direction">
                                          <div class="badge badge-secondary p-1 mr-2">9+</div>
                                          <span class="text-white">2 Seasons</span>
@@ -977,7 +977,7 @@
                                       <img src="{{asset('frontend/images/suggested/04.jpg')}}" class="img-fluid" alt="">
                                    </div>
                                    <div class="block-description">
-                                      <h6 class="iq-title"><a href="{{route('frontend.showdetails')}}">Friends</a></h6>
+                                      <h6 class="iq-title"><a href="#">Friends</a></h6>
                                       <div class="movie-time d-flex align-items-center my-2 iq-ltr-direction">
                                          <div class="badge badge-secondary p-1 mr-2">14+</div>
                                          <span class="text-white">10 Seasons</span>
@@ -1203,7 +1203,7 @@
                                             </p>
                                             <div class="p-btns">
                                                <div class="d-flex align-items-center p-0">
-                                                  <a href="{{route('frontend.showdetails')}}" class="btn btn-hover mr-2" tabindex="0"><i
+                                                  <a href="#" class="btn btn-hover mr-2" tabindex="0"><i
                                                      class="fa fa-play mr-2" aria-hidden="true"></i>Play Now</a>
                                                   <a href="javascript:void(0);" class="btn btn-link" tabindex="0"><i class="ri-add-line"></i>My
                                                   List</a>
@@ -1225,7 +1225,7 @@
                                       <div id="trending-data2" class="overlay-tab tab-pane fade">
                                          <div
                                             class="trending-info align-items-center w-100 animated fadeInUp iq-ltr-direction">
-                                            <a href="{{route('frontend.showdetails')}}" tabindex="0">
+                                            <a href="#" tabindex="0">
                                                <div class="channel-logo">
                                                   <img src="{{asset('frontend/images/logo.png')}}" class="c-logo" alt="stramit">
                                                </div>
@@ -1249,19 +1249,19 @@
                                                <div class="owl-carousel owl-theme episodes-slider1 list-inline p-0 mb-0  iq-rtl-direction  ">
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 1</a>
+                                                           <a href="#">Episode 1</a>
                                                            <span class="text-primary">2.25 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -1270,19 +1270,19 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body ">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 2</a>
+                                                           <a href="#">Episode 2</a>
                                                            <span class="text-primary">3.23 m</span>
                                                         </div>
                                                         <p class="mb-0">
@@ -1292,19 +1292,19 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 3</a>
+                                                           <a href="#">Episode 3</a>
                                                            <span class="text-primary">2 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -1313,19 +1313,19 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body ">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 4</a>
+                                                           <a href="#">Episode 4</a>
                                                            <span class="text-primary">1.12 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -1334,19 +1334,19 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 5</a>
+                                                           <a href="#">Episode 5</a>
                                                            <span class="text-primary">2.54 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -1495,20 +1495,20 @@
                                                <div class="owl-carousel owl-theme episodes-slider1 list-inline p-0 mb-0  iq-rtl-direction  ">
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 1</a>
+                                                           <a href="#">Episode 1</a>
                                                            <span class="text-primary">2.25 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -1517,20 +1517,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 2</a>
+                                                           <a href="#">Episode 2</a>
                                                            <span class="text-primary">3.23 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -1539,20 +1539,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 3</a>
+                                                           <a href="#">Episode 3</a>
                                                            <span class="text-primary">2 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -1561,20 +1561,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 4</a>
+                                                           <a href="#">Episode 4</a>
                                                            <span class="text-primary">1.12 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -1583,20 +1583,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 5</a>
+                                                           <a href="#">Episode 5</a>
                                                            <span class="text-primary">2.54 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -1664,7 +1664,7 @@
                                             </p>
                                             <div class="p-btns">
                                                <div class="d-flex align-items-center p-0">
-                                                  <a href="{{route('frontend.showdetails')}}" class="btn btn-hover mr-2" tabindex="0"><i
+                                                  <a href="#" class="btn btn-hover mr-2" tabindex="0"><i
                                                      class="fa fa-play mr-2" aria-hidden="true"></i>Play Now</a>
                                                   <a href="javascript:void(0);" class="btn btn-link" tabindex="0"><i class="ri-add-line"></i>My
                                                   List</a>
@@ -1686,7 +1686,7 @@
                                       <div id="trending-data6" class="overlay-tab tab-pane fade">
                                          <div
                                             class="trending-info align-items-center w-100 animated fadeInUp iq-ltr-direction">
-                                            <a href="{{route('frontend.showdetails')}}" tabindex="0">
+                                            <a href="#" tabindex="0">
                                                <div class="channel-logo">
                                                   <img src="{{asset('frontend/images/logo.png')}}" class="c-logo" alt="stramit">
                                                </div>
@@ -1709,20 +1709,20 @@
                                                <div class="owl-carousel owl-theme episodes-slider1 list-inline p-0 mb-0  iq-rtl-direction  ">
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 1</a>
+                                                           <a href="#">Episode 1</a>
                                                            <span class="text-primary">2.25 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -1731,20 +1731,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 2</a>
+                                                           <a href="#">Episode 2</a>
                                                            <span class="text-primary">3.23 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -1753,20 +1753,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 3</a>
+                                                           <a href="#">Episode 3</a>
                                                            <span class="text-primary">2 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -1775,20 +1775,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 4</a>
+                                                           <a href="#">Episode 4</a>
                                                            <span class="text-primary">1.12 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -1797,20 +1797,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 5</a>
+                                                           <a href="#">Episode 5</a>
                                                            <span class="text-primary">2.54 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -1959,20 +1959,20 @@
                                                <div class="owl-carousel owl-theme episodes-slider1 list-inline p-0 mb-0  iq-rtl-direction  ">
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 1</a>
+                                                           <a href="#">Episode 1</a>
                                                            <span class="text-primary">2.25 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -1981,20 +1981,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 2</a>
+                                                           <a href="#">Episode 2</a>
                                                            <span class="text-primary">3.23 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -2003,20 +2003,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 3</a>
+                                                           <a href="#">Episode 3</a>
                                                            <span class="text-primary">2 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -2025,20 +2025,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 4</a>
+                                                           <a href="#">Episode 4</a>
                                                            <span class="text-primary">1.12 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -2047,20 +2047,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 5</a>
+                                                           <a href="#">Episode 5</a>
                                                            <span class="text-primary">2.54 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -2128,7 +2128,7 @@
                                             </p>
                                             <div class="p-btns">
                                                <div class="d-flex align-items-center p-0">
-                                                  <a href="{{route('frontend.showdetails')}}" class="btn btn-hover mr-2" tabindex="0"><i
+                                                  <a href="#" class="btn btn-hover mr-2" tabindex="0"><i
                                                      class="fa fa-play mr-2" aria-hidden="true"></i>Play Now</a>
                                                   <a href="javascript:void(0);" class="btn btn-link" tabindex="0"><i class="ri-add-line"></i>My
                                                   List</a>
@@ -2150,7 +2150,7 @@
                                       <div id="trending-data10" class="overlay-tab tab-pane fade">
                                          <div
                                             class="trending-info align-items-center w-100 animated fadeInUp iq-ltr-direction">
-                                            <a href="{{route('frontend.showdetails')}}" tabindex="0">
+                                            <a href="#" tabindex="0">
                                                <div class="channel-logo">
                                                   <img src="{{asset('frontend/images/logo.png')}}" class="c-logo" alt="stramit">
                                                </div>
@@ -2174,20 +2174,20 @@
                                                <div class="owl-carousel owl-theme episodes-slider1 list-inline p-0 mb-0  iq-rtl-direction  ">
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 1</a>
+                                                           <a href="#">Episode 1</a>
                                                            <span class="text-primary">2.25 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -2196,20 +2196,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 2</a>
+                                                           <a href="#">Episode 2</a>
                                                            <span class="text-primary">3.23 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -2218,20 +2218,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 3</a>
+                                                           <a href="#">Episode 3</a>
                                                            <span class="text-primary">2 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -2240,20 +2240,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 4</a>
+                                                           <a href="#">Episode 4</a>
                                                            <span class="text-primary">1.12 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -2262,20 +2262,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 5</a>
+                                                           <a href="#">Episode 5</a>
                                                            <span class="text-primary">2.54 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -2424,20 +2424,20 @@
                                                <div class="owl-carousel owl-theme episodes-slider1 list-inline p-0 mb-0  iq-rtl-direction  ">
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 1</a>
+                                                           <a href="#">Episode 1</a>
                                                            <span class="text-primary">2.25 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -2446,20 +2446,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 2</a>
+                                                           <a href="#">Episode 2</a>
                                                            <span class="text-primary">3.23 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -2468,20 +2468,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 3</a>
+                                                           <a href="#">Episode 3</a>
                                                            <span class="text-primary">2 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -2490,20 +2490,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 4</a>
+                                                           <a href="#">Episode 4</a>
                                                            <span class="text-primary">1.12 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -2512,20 +2512,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 5</a>
+                                                           <a href="#">Episode 5</a>
                                                            <span class="text-primary">2.54 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -2593,7 +2593,7 @@
                                             </p>
                                             <div class="p-btns">
                                                <div class="d-flex align-items-center p-0">
-                                                  <a href="{{route('frontend.showdetails')}}" class="btn btn-hover mr-2" tabindex="0"><i
+                                                  <a href="#" class="btn btn-hover mr-2" tabindex="0"><i
                                                      class="fa fa-play mr-2" aria-hidden="true"></i>Play Now</a>
                                                   <a href="javascript:void(0);" class="btn btn-link" tabindex="0"><i class="ri-add-line"></i>My
                                                   List</a>
@@ -2615,7 +2615,7 @@
                                       <div id="trending-data14" class="overlay-tab tab-pane fade">
                                          <div
                                             class="trending-info align-items-center w-100 animated fadeInUp iq-ltr-direction">
-                                            <a href="{{route('frontend.showdetails')}}" tabindex="0">
+                                            <a href="#" tabindex="0">
                                                <div class="channel-logo">
                                                   <img src="{{asset('frontend/images/logo.png')}}" class="c-logo" alt="stramit">
                                                </div>
@@ -2638,20 +2638,20 @@
                                                <div class="owl-carousel owl-theme episodes-slider1 list-inline p-0 mb-0  iq-rtl-direction  ">
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 1</a>
+                                                           <a href="#">Episode 1</a>
                                                            <span class="text-primary">2.25 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -2660,20 +2660,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 2</a>
+                                                           <a href="#">Episode 2</a>
                                                            <span class="text-primary">3.23 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -2682,20 +2682,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 3</a>
+                                                           <a href="#">Episode 3</a>
                                                            <span class="text-primary">2 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -2704,20 +2704,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 4</a>
+                                                           <a href="#">Episode 4</a>
                                                            <span class="text-primary">1.12 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -2726,20 +2726,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 5</a>
+                                                           <a href="#">Episode 5</a>
                                                            <span class="text-primary">2.54 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -2888,20 +2888,20 @@
                                                <div class="owl-carousel owl-theme episodes-slider1 list-inline p-0 mb-0  iq-rtl-direction  ">
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 1</a>
+                                                           <a href="#">Episode 1</a>
                                                            <span class="text-primary">2.25 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -2910,20 +2910,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 2</a>
+                                                           <a href="#">Episode 2</a>
                                                            <span class="text-primary">3.23 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -2932,20 +2932,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 3</a>
+                                                           <a href="#">Episode 3</a>
                                                            <span class="text-primary">2 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -2954,20 +2954,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 4</a>
+                                                           <a href="#">Episode 4</a>
                                                            <span class="text-primary">1.12 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -2976,20 +2976,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 5</a>
+                                                           <a href="#">Episode 5</a>
                                                            <span class="text-primary">2.54 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -3057,7 +3057,7 @@
                                             </p>
                                             <div class="p-btns">
                                                <div class="d-flex align-items-center p-0">
-                                                  <a href="{{route('frontend.showdetails')}}" class="btn btn-hover mr-2" tabindex="0"><i
+                                                  <a href="#" class="btn btn-hover mr-2" tabindex="0"><i
                                                      class="fa fa-play mr-2" aria-hidden="true"></i>Play Now</a>
                                                   <a href="javascript:void(0);" class="btn btn-link" tabindex="0"><i class="ri-add-line"></i>My
                                                   List</a>
@@ -3079,7 +3079,7 @@
                                       <div id="trending-data18" class="overlay-tab tab-pane fade">
                                          <div
                                             class="trending-info align-items-center w-100 animated fadeInUp iq-ltr-direction">
-                                            <a href="{{route('frontend.showdetails')}}" tabindex="0">
+                                            <a href="#" tabindex="0">
                                                <div class="channel-logo">
                                                   <img src="{{asset('frontend/images/logo.png')}}" class="c-logo" alt="stramit">
                                                </div>
@@ -3102,20 +3102,20 @@
                                                <div class="owl-carousel owl-theme episodes-slider1 list-inline p-0 mb-0  iq-rtl-direction  ">
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 1</a>
+                                                           <a href="#">Episode 1</a>
                                                            <span class="text-primary">2.25 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -3124,20 +3124,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 2</a>
+                                                           <a href="#">Episode 2</a>
                                                            <span class="text-primary">3.23 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -3146,20 +3146,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 3</a>
+                                                           <a href="#">Episode 3</a>
                                                            <span class="text-primary">2 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -3168,20 +3168,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 4</a>
+                                                           <a href="#">Episode 4</a>
                                                            <span class="text-primary">1.12 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -3190,20 +3190,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 5</a>
+                                                           <a href="#">Episode 5</a>
                                                            <span class="text-primary">2.54 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -3352,20 +3352,20 @@
                                                <div class="owl-carousel owl-theme episodes-slider1 list-inline p-0 mb-0  iq-rtl-direction  ">
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 1</a>
+                                                           <a href="#">Episode 1</a>
                                                            <span class="text-primary">2.25 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -3374,20 +3374,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 2</a>
+                                                           <a href="#">Episode 2</a>
                                                            <span class="text-primary">3.23 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -3396,20 +3396,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 3</a>
+                                                           <a href="#">Episode 3</a>
                                                            <span class="text-primary">2 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -3418,20 +3418,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 4</a>
+                                                           <a href="#">Episode 4</a>
                                                            <span class="text-primary">1.12 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -3440,20 +3440,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 5</a>
+                                                           <a href="#">Episode 5</a>
                                                            <span class="text-primary">2.54 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -3521,7 +3521,7 @@
                                             </p>
                                             <div class="p-btns">
                                                <div class="d-flex align-items-center p-0">
-                                                  <a href="{{route('frontend.showdetails')}}" class="btn btn-hover mr-2" tabindex="0"><i
+                                                  <a href="#" class="btn btn-hover mr-2" tabindex="0"><i
                                                      class="fa fa-play mr-2" aria-hidden="true"></i>Play Now</a>
                                                   <a href="javascript:void(0);" class="btn btn-link" tabindex="0"><i class="ri-add-line"></i>My
                                                   List</a>
@@ -3543,7 +3543,7 @@
                                       <div id="trending-data22" class="overlay-tab tab-pane fade">
                                          <div
                                             class="trending-info align-items-center w-100 animated fadeInUp iq-ltr-direction">
-                                            <a href="{{route('frontend.showdetails')}}" tabindex="0">
+                                            <a href="#" tabindex="0">
                                                <div class="channel-logo">
                                                   <img src="{{asset('frontend/images/logo.png')}}" class="c-logo" alt="stramit">
                                                </div>
@@ -3566,20 +3566,20 @@
                                                <div class="owl-carousel owl-theme episodes-slider1 list-inline p-0 mb-0  iq-rtl-direction  ">
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 1</a>
+                                                           <a href="#">Episode 1</a>
                                                            <span class="text-primary">2.25 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -3588,19 +3588,19 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 2</a>
+                                                           <a href="#">Episode 2</a>
                                                            <span class="text-primary">3.23 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -3609,19 +3609,19 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 3</a>
+                                                           <a href="#">Episode 3</a>
                                                            <span class="text-primary">2 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -3630,19 +3630,19 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 4</a>
+                                                           <a href="#">Episode 4</a>
                                                            <span class="text-primary">1.12 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -3651,19 +3651,19 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 5</a>
+                                                           <a href="#">Episode 5</a>
                                                            <span class="text-primary">2.54 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -3812,20 +3812,20 @@
                                                <div class="owl-carousel owl-theme episodes-slider1 list-inline p-0 mb-0  iq-rtl-direction  ">
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 1</a>
+                                                           <a href="#">Episode 1</a>
                                                            <span class="text-primary">2.25 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -3834,20 +3834,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 2</a>
+                                                           <a href="#">Episode 2</a>
                                                            <span class="text-primary">3.23 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -3856,20 +3856,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 3</a>
+                                                           <a href="#">Episode 3</a>
                                                            <span class="text-primary">2 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -3878,20 +3878,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 4</a>
+                                                           <a href="#">Episode 4</a>
                                                            <span class="text-primary">1.12 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -3900,20 +3900,20 @@
                                                   </div>
                                                   <div class="e-item">
                                                      <div class="block-image position-relative">
-                                                        <a href="{{route('frontend.showdetails')}}">
+                                                        <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
                                                         
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
-                                                              <a href="{{route('frontend.showdetails')}}" tabindex="0"><i
+                                                              <a href="#" tabindex="0"><i
                                                                  class="ri-play-fill"></i></a>
                                                            </div>
                                                         </div>
                                                      </div>
                                                      <div class="episodes-description text-body">
                                                         <div class="d-flex align-items-center justify-content-between">
-                                                           <a href="{{route('frontend.showdetails')}}">Episode 5</a>
+                                                           <a href="#">Episode 5</a>
                                                            <span class="text-primary">2.54 m</span>
                                                         </div>
                                                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
@@ -3951,7 +3951,7 @@
                                       <img src="{{asset('frontend/images/tvthrillers/01.jpg')}}" class="img-fluid" alt="">
                                    </div>
                                    <div class="block-description">
-                                      <h6 class="iq-title"><a href="{{route('frontend.showdetails')}}">Day of Darkness</a></h6>
+                                      <h6 class="iq-title"><a href="#">Day of Darkness</a></h6>
                                       <div class="movie-time d-flex align-items-center my-2 iq-ltr-direction">
                                          <div class="badge badge-secondary p-1 mr-2">15+</div>
                                          <span class="text-white">2 Seasons</span>
@@ -3990,7 +3990,7 @@
                                       <img src="{{asset('frontend/images/tvthrillers/02.jpg')}}" class="img-fluid" alt="">
                                    </div>
                                    <div class="block-description">
-                                      <h6 class="iq-title"><a href="{{route('frontend.showdetails')}}">My True Friends</a></h6>
+                                      <h6 class="iq-title"><a href="#">My True Friends</a></h6>
                                       <div class="movie-time d-flex align-items-center my-2 iq-ltr-direction">
                                          <div class="badge badge-secondary p-1 mr-2">7+</div>
                                          <span class="text-white">2 Seasons</span>
@@ -4029,7 +4029,7 @@
                                       <img src="{{asset('frontend/images/tvthrillers/03.jpg')}}" class="img-fluid" alt="">
                                    </div>
                                    <div class="block-description">
-                                      <h6 class="iq-title"><a href="{{route('frontend.showdetails')}}">Arrival 1999</a></h6>
+                                      <h6 class="iq-title"><a href="#">Arrival 1999</a></h6>
                                       <div class="movie-time d-flex align-items-center my-2 iq-ltr-direction">
                                          <div class="badge badge-secondary p-1 mr-2">11+</div>
                                          <span class="text-white">3 Seasons</span>
@@ -4068,7 +4068,7 @@
                                       <img src="{{asset('frontend/images/tvthrillers/04.jpg')}}" class="img-fluid" alt="">
                                    </div>
                                    <div class="block-description">
-                                      <h6 class="iq-title"><a href="{{route('frontend.showdetails')}}">Night Mare</a></h6>
+                                      <h6 class="iq-title"><a href="#">Night Mare</a></h6>
                                       <div class="movie-time d-flex align-items-center my-2 iq-ltr-direction">
                                          <div class="badge badge-secondary p-1 mr-2">18+</div>
                                          <span class="text-white">3 Seasons</span>
@@ -4107,7 +4107,7 @@
                                       <img src="{{asset('frontend/images/tvthrillers/05.jpg')}}" class="img-fluid" alt="">
                                    </div>
                                    <div class="block-description">
-                                      <h6 class="iq-title"><a href="{{route('frontend.showdetails')}}">The Marshal King</a></h6>
+                                      <h6 class="iq-title"><a href="#">The Marshal King</a></h6>
                                       <div class="movie-time d-flex align-items-center my-2 iq-ltr-direction">
                                          <div class="badge badge-secondary p-1 mr-2">17+</div>
                                          <span class="text-white">1 Season</span>

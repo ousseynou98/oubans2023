@@ -11,7 +11,7 @@
 [dir="rtl"] .block-description{position:absolute; right: 25px; top:0; bottom: 0; z-index:999; display: flex; justify-content: center; flex-direction: column;}
 [dir="rtl"] .text-left{text-align: right !important;}
 [dir="rtl"] .block-social-info{left:25px; right: auto;}
-[dir="rtl"] li.slide-item:hover .block-images {border-right: 5px solid #e50914; border-left: 0;}
+[dir="rtl"] li.slide-item:hover .block-images {border-right: 5px solid #e86cd5; border-left: 0;}
 [dir="rtl"] .select2-container--bootstrap4 .select2-selection--single .select2-selection__arrow {position: absolute;top: 50%;
     right: auto; left: 35px;}
 [dir="rtl"] .navbar-right .iq-sub-dropdown{left: 15px; right: auto;}

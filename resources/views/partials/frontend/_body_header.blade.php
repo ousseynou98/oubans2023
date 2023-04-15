@@ -150,22 +150,21 @@
                       <div class="menu-main-menu-container">
                          <ul id="top-menu" class="navbar-nav ml-auto">
                             <li class="menu-item ">
-                               <a href="{{route('frontend.home')}}">Home</a>
+                               <a href="{{route('frontend.home')}}">Accueil</a>
                             </li>
                             <li class="menu-item">
-                               <a href="{{route('frontend.movie')}}">Movies</a>
+                               <a href="{{route('frontend.movie')}}">Films</a>
                             </li> 
                             <li class="menu-item">
-                               <a href="{{route('frontend.show')}}">Tv Shows</a>
+                               <a href="{{route('frontend.show')}}">Séries</a>
                             </li>  
                             <li class="menu-item">
-                                    <a href="#">Blog</a>
-                                    <ul class="sub-menu">
-                                       <li class="menu-item"><a href="{{route('frontend.blog')}}">Blog</a></li>
-                                       <li class="menu-item"><a href="{{route('frontend.blogdetails')}}">Blog details</a></li>
-                                    </ul>
-                              </li>                                                            
-                            
+                               <a href="{{route('frontend.about')}}">à propos</a>
+                            </li>
+                            <li class="menu-item">
+                               <a href="{{route('frontend.about')}}">Contact</a>
+                            </li>                                           
+<!--                             
                             <li class="menu-item">
                                <a href="#">Pages</a>
                                <ul class="sub-menu">
@@ -180,7 +179,7 @@
                                   </ul>
                                </li>
                                </ul>
-                            </li>
+                            </li> -->
                          </ul>
                       </div>
                    </div>

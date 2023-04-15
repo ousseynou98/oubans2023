@@ -19,3 +19,4 @@
 <!-- Custom JS-->
 <script src="{{asset('frontend/js/custom.js')}}"></script>
 <script src="{{asset('frontend/js/rtl.js')}}"></script>
+<script src="https://cdn.plyr.io/3.6.3/plyr.js"></script>

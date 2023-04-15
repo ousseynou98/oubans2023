@@ -18,3 +18,4 @@
 <link rel='stylesheet' href="{{ asset('frontend/css/style.css') }}" />
 <link rel='stylesheet' href="{{ asset('frontend/css/responsive.css') }}" />
 <link rel='stylesheet' href="{{ asset('frontend/css/variable.css') }}" />
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />

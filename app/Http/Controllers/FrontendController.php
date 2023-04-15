@@ -9,7 +9,7 @@ class FrontendController extends Controller
     //
     public function index(Request $request)
     {
-        return view('frontend.home');
+        return view('frontend.welcome');
     }
     public function movie(Request $request)
     {

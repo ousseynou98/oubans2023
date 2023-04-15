@@ -3,7 +3,7 @@
        <a href="{{ route('dashboard.home') }}" class="header-logo">
           <img src="{{  asset ('dashboard/images/logo.png')  }}" class="img-fluid rounded-normal" alt="">
           <div class="logo-title">
-             <span class="text-primary text-uppercase">Streamit</span>
+             <span class="text-primary text-uppercase">Oubans</span>
           </div>
        </a>
        <div class="iq-menu-bt-sidebar">
@@ -19,6 +19,7 @@
           <ul id="iq-sidebar-toggle" class="iq-menu">
              <li><a href="{{ route('frontend.home') }}" class="text-primary"><i class="ri-arrow-right-line"></i><span>Visit site</span></a></li>
              <li class="{{activeRouteName('dashboard.home')}}"><a href="{{ route('dashboard.home') }}" class="iq-waves-effect"><i class="las la-home iq-arrow-left"></i><span>Dashboard</span></a></li>
+             <li class="{{activeRouteName('dashboard.slider')}}"><a href="{{ route('dashboard.slider') }}" class="iq-waves-effect"><i class="las la-images iq-arrow-left"></i><span>Slider</span></a></li>
              @can('rating')
              <li class="{{activeRouteName('dashboard.rating')}}"><a href="{{ route('dashboard.rating') }}" class="iq-waves-effect"><i class="las la-star-half-alt"></i><span>Rating </span></a></li>
              @endcan
