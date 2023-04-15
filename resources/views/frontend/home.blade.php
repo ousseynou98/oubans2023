@@ -1,8 +1,8 @@
 <x-layouts.frontend>
-   
+
    <body>
-     
-      
+
+
    <section id="home" class="iq-main-slider p-0 iq-rtl-direction">
         <div id="home-slider" class="slider m-0 p-0">
            <div class="slide slick-bg s-bg-1">
@@ -46,14 +46,14 @@
                            </div>
 
                           <!-- <div class="d-flex align-items-center" data-animation-in="fadeInUp" data-delay-in="1">
-                              
+
                              <span class="badge badge-secondary p-2">18+</span>
                              <span class="ml-3">2 Seasons</span>
                           </div> -->
                           <p data-animation-in="fadeInUp" data-delay-in="1.2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
                              dummy text ever since the 1500s.
                           </p>
-                          <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+                        <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
                            <div class="text-primary title starring">
                                Starring: <span class="text-body">Karen Gilchrist, James Earl Jones</span>
                            </div>
@@ -99,7 +99,7 @@
                              </div>
                           </a>
                           <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft">sail coaster</h1>
-                          
+
                           <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
                            <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
                                <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
@@ -175,7 +175,7 @@
                              </div>
                           </a>
                           <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft">the army</h1>
-                          
+
                           <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
                            <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
                                <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
@@ -203,7 +203,7 @@
                            </div>
                        </div>
 
-                          
+
                           <p data-animation-in="fadeInUp" data-delay-in="1.2" class="fadeInUp animated" style="opacity: 1; animation-delay: 1.2s;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
                              dummy text ever since the 1500s.
                           </p>
@@ -258,12 +258,12 @@
                  <div class="col-sm-12 overflow-hidden">
                     <div class="iq-main-header d-flex align-items-center justify-content-between">
                        <h4 class="main-title">Latest Movies</h4>
-                       <a class="iq-view-all" href="{{route('frontend.movie')}}">View All</a>                   
+                       <a class="iq-view-all" href="{{route('frontend.movie')}}">View All</a>
                     </div>
                     <div class="favorites-contens">
                        <ul class="favorites-slider list-inline  row p-0 mb-0 iq-rtl-direction">
                           <li class="slide-item">
-                             
+
                                 <div class="block-images position-relative">
                                    <div class="img-box">
                                       <img src="{{asset('frontend/images/favorite/01.jpg')}}" class="img-fluid" alt="">
@@ -299,14 +299,14 @@
                                               <span class="count-box">19+</span>
                                            </li>
                                          <li><span><i class="ri-add-line"></i></span></li>
-                        
+
                                        </ul>
                                     </div>
                                 </div>
                              </a>
                           </li>
                           <li class="slide-item">
-                             
+
                                 <div class="block-images position-relative">
                                    <div class="img-box">
                                       <img src="{{asset('frontend/images/favorite/02.jpg')}}" class="img-fluid" alt="">
@@ -322,10 +322,10 @@
                                           <i class="fa fa-play mr-1" aria-hidden="true"></i>
                                           Play Now
                                           </a>
-                                         
+
                                       </div>
                                    </div>
-                                   
+
                                    <div class="block-social-info">
                                       <ul class="list-inline p-0 m-0 music-play-lists">
                                        <li class="share">
@@ -344,10 +344,10 @@
                                       </ul>
                                    </div>
                                 </div>
-                             
+
                           </li>
                           <li class="slide-item">
-                             
+
                                 <div class="block-images position-relative">
                                    <div class="img-box">
                                       <img src="{{asset('frontend/images/favorite/03.jpg')}}" class="img-fluid" alt="">
@@ -383,10 +383,10 @@
                                       </ul>
                                    </div>
                                 </div>
-                             
+
                           </li>
                           <li class="slide-item">
-                             
+
                                 <div class="block-images position-relative">
                                    <div class="img-box">
                                       <img src="{{asset('frontend/images/favorite/04.png')}}" class="img-fluid" alt="">
@@ -422,10 +422,10 @@
                                       </ul>
                                    </div>
                                 </div>
-                             
+
                           </li>
                           <li class="slide-item">
-                             
+
                                 <div class="block-images position-relative">
                                    <div class="img-box">
                                       <img src="{{asset('frontend/images/favorite/05.jpg')}}" class="img-fluid" alt="">
@@ -461,7 +461,7 @@
                                       </ul>
                                    </div>
                                 </div>
-                             
+
                           </li>
                        </ul>
                     </div>
@@ -473,14 +473,14 @@
            <div class="container-fluid">
               <div class="row">
                  <div class="col-sm-12 overflow-hidden">
-                    <div class="iq-main-header d-flex align-items-center justify-content-between">                        
+                    <div class="iq-main-header d-flex align-items-center justify-content-between">
                        <h4 class="main-title">Upcoming Movies</h4>
                        <a class="iq-view-all" href="{{route('frontend.movie')}}">View All</a>
                     </div>
                     <div class="upcoming-contens">
                        <ul class="favorites-slider list-inline row p-0 mb-0 iq-rtl-direction">
                           <li class="slide-item">
-                             
+
                                 <div class="block-images position-relative">
                                    <div class="img-box">
                                       <img src="{{asset('frontend/images/upcoming/01.jpg')}}" class="img-fluid" alt="">
@@ -516,10 +516,10 @@
                                       </ul>
                                    </div>
                                 </div>
-                            
+
                           </li>
                           <li class="slide-item">
-                             
+
                                 <div class="block-images position-relative">
                                    <div class="img-box">
                                       <img src="{{asset('frontend/images/upcoming/02.jpg')}}" class="img-fluid" alt="">
@@ -555,10 +555,10 @@
                                       </ul>
                                    </div>
                                 </div>
-                             
+
                           </li>
                           <li class="slide-item">
-                            
+
                                 <div class="block-images position-relative">
                                    <div class="img-box">
                                       <img src="{{asset('frontend/images/upcoming/03.jpg')}}" class="img-fluid" alt="">
@@ -594,10 +594,10 @@
                                       </ul>
                                    </div>
                                 </div>
-                             
+
                           </li>
                           <li class="slide-item">
-                             
+
                                 <div class="block-images position-relative">
                                    <div class="img-box">
                                       <img src="{{asset('frontend/images/upcoming/04.jpg')}}" class="img-fluid" alt="">
@@ -633,10 +633,10 @@
                                       </ul>
                                    </div>
                                 </div>
-                             
+
                           </li>
                           <li class="slide-item">
-                             
+
                                 <div class="block-images position-relative">
                                    <div class="img-box">
                                       <img src="{{asset('frontend/images/upcoming/05.jpg')}}" class="img-fluid" alt="">
@@ -672,7 +672,7 @@
                                       </ul>
                                    </div>
                                 </div>
-                             
+
                           </li>
                        </ul>
                     </div>
@@ -848,14 +848,14 @@
            <div class="container-fluid">
               <div class="row">
                  <div class="col-sm-12 overflow-hidden">
-                    <div class="iq-main-header d-flex align-items-center justify-content-between">                       
+                    <div class="iq-main-header d-flex align-items-center justify-content-between">
                        <h4 class="main-title">Suggested For You</h4>
-                       <a class="iq-view-all" href="{{route('frontend.movie')}}">View All</a>                     
+                       <a class="iq-view-all" href="{{route('frontend.movie')}}">View All</a>
                     </div>
                     <div class="suggestede-contens">
                        <ul class="list-inline favorites-slider row p-0 mb-0 iq-rtl-direction">
                           <li class="slide-item">
-                             
+
                                 <div class="block-images position-relative">
                                    <div class="img-box">
                                       <img src="{{asset('frontend/images/suggested/01.jpg')}}" class="img-fluid" alt="">
@@ -891,10 +891,10 @@
                                       </ul>
                                    </div>
                                 </div>
-                             
+
                           </li>
                           <li class="slide-item">
-                             
+
                                 <div class="block-images position-relative">
                                    <div class="img-box">
                                       <img src="{{asset('frontend/images/suggested/02.jpg')}}" class="img-fluid" alt="">
@@ -933,7 +933,7 @@
 
                           </li>
                           <li class="slide-item">
-                             
+
                                 <div class="block-images position-relative">
                                    <div class="img-box">
                                       <img src="{{asset('frontend/images/suggested/03.jpg')}}" class="img-fluid" alt="">
@@ -969,9 +969,9 @@
                                       </ul>
                                    </div>
                                 </div>
-                             
+
                           </li>
-                          <li class="slide-item">                              
+                          <li class="slide-item">
                                 <div class="block-images position-relative">
                                    <div class="img-box">
                                       <img src="{{asset('frontend/images/suggested/04.jpg')}}" class="img-fluid" alt="">
@@ -1006,10 +1006,10 @@
                                          <li><span><i class="ri-add-line"></i></span></li>
                                       </ul>
                                    </div>
-                                </div>                              
+                                </div>
                           </li>
                           <li class="slide-item">
-                             
+
                                 <div class="block-images position-relative">
                                    <div class="img-box">
                                       <img src="{{asset('frontend/images/suggested/05.jpg')}}" class="img-fluid" alt="">
@@ -1045,7 +1045,7 @@
                                       </ul>
                                    </div>
                                 </div>
-                             
+
                           </li>
                        </ul>
                     </div>
@@ -1102,8 +1102,8 @@
            <div class="container-fluid">
               <div class="row">
                  <div class="col-sm-12 overflow-hidden">
-                    <div class="iq-main-header d-flex align-items-center justify-content-between">                      
-                       <h4 class="main-title">Trending</h4>                        
+                    <div class="iq-main-header d-flex align-items-center justify-content-between">
+                       <h4 class="main-title">Trending</h4>
                     </div>
                     <div class="trending-contens">
                        <ul id="trending-slider-nav" class="list-inline p-0 mb-0 row align-items-center iq-rtl-direction">
@@ -1244,7 +1244,7 @@
                                                   <option value="season3">Season 3</option>
                                                </select>
                                             </div>
-                                            
+
                                             <div class="episodes-contens mt-4">
                                                <div class="owl-carousel owl-theme episodes-slider1 list-inline p-0 mb-0  iq-rtl-direction  ">
                                                   <div class="e-item">
@@ -1373,7 +1373,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -1395,7 +1395,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -1417,7 +1417,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -1439,7 +1439,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -1461,7 +1461,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -1498,7 +1498,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -1520,7 +1520,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -1542,7 +1542,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -1564,7 +1564,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -1586,7 +1586,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -1698,7 +1698,7 @@
                                                </span>
                                                     <span class="trending-year">Feb 2019</span>
                                             </div>
-                                            
+
                                             <div class="iq-custom-select d-inline-block sea-epi">
                                                <select name="cars" class="form-control season-select">
                                                   <option value="season1">Season 1</option>
@@ -1712,7 +1712,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -1734,7 +1734,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -1756,7 +1756,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -1778,7 +1778,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -1800,7 +1800,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -1837,7 +1837,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -1859,7 +1859,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -1881,7 +1881,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -1903,7 +1903,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -1925,7 +1925,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -1962,7 +1962,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -1984,7 +1984,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -2006,7 +2006,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -2028,7 +2028,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -2050,7 +2050,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -2162,7 +2162,7 @@
                                                </span>
                                                     <span class="trending-year">Feb 2019</span>
                                             </div>
-                                            
+
                                             <div class="iq-custom-select d-inline-block sea-epi">
                                                <select name="cars" class="form-control season-select">
                                                   <option value="season1">Season 1</option>
@@ -2177,7 +2177,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -2199,7 +2199,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -2221,7 +2221,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -2243,7 +2243,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -2265,7 +2265,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -2302,7 +2302,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -2324,7 +2324,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -2346,7 +2346,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -2368,7 +2368,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -2390,7 +2390,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -2427,7 +2427,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -2449,7 +2449,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -2471,7 +2471,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -2493,7 +2493,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -2515,7 +2515,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -2627,7 +2627,7 @@
                                                </span>
                                                     <span class="trending-year">Feb 2019</span>
                                             </div>
-                                            
+
                                             <div class="iq-custom-select d-inline-block sea-epi">
                                                <select name="cars" class="form-control season-select">
                                                   <option value="season1">Season 1</option>
@@ -2641,7 +2641,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -2663,7 +2663,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -2685,7 +2685,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -2707,7 +2707,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -2729,7 +2729,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -2766,7 +2766,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -2788,7 +2788,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -2810,7 +2810,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -2832,7 +2832,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -2854,7 +2854,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -2891,7 +2891,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -2913,7 +2913,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -2935,7 +2935,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -2957,7 +2957,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -2979,7 +2979,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -3091,7 +3091,7 @@
                                                </span>
                                                     <span class="trending-year">Feb 2019</span>
                                             </div>
-                                            
+
                                             <div class="iq-custom-select d-inline-block sea-epi">
                                                <select name="cars" class="form-control season-select">
                                                   <option value="season1">Season 1</option>
@@ -3105,7 +3105,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -3127,7 +3127,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -3149,7 +3149,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -3171,7 +3171,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -3193,7 +3193,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -3230,7 +3230,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -3252,7 +3252,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -3274,7 +3274,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -3296,7 +3296,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -3318,7 +3318,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -3355,7 +3355,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -3377,7 +3377,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -3399,7 +3399,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -3421,7 +3421,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -3443,7 +3443,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -3555,7 +3555,7 @@
                                                </span>
                                                     <span class="trending-year">Feb 2019</span>
                                             </div>
-                                            
+
                                             <div class="iq-custom-select d-inline-block sea-epi">
                                                <select name="cars" class="form-control season-select">
                                                   <option value="season1">Season 1</option>
@@ -3569,7 +3569,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -3690,7 +3690,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -3712,7 +3712,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -3734,7 +3734,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -3756,7 +3756,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -3778,7 +3778,7 @@
                                                         <a href="{{route('frontend.watchvideo')}}" target="_blank">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="{{route('frontend.watchvideo')}}" target="_blank" tabindex="0"><i
@@ -3815,7 +3815,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/01.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -3837,7 +3837,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/02.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -3859,7 +3859,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/03.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -3881,7 +3881,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/04.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -3903,7 +3903,7 @@
                                                         <a href="#">
                                                         <img src="{{asset('frontend/images/episodes/05.jpg')}}" class="img-fluid" alt="">
                                                         </a>
-                                                        
+
                                                         <div class="episode-play-info">
                                                            <div class="episode-play">
                                                               <a href="#" tabindex="0"><i
@@ -3938,14 +3938,14 @@
            <div class="container-fluid">
               <div class="row">
                  <div class="col-sm-12 overflow-hidden">
-                    <div class="iq-main-header d-flex align-items-center justify-content-between">                        
+                    <div class="iq-main-header d-flex align-items-center justify-content-between">
                        <h4 class="main-title">Recommended For You</h4>
-                       <a class="iq-view-all" href="{{route('frontend.movie')}}">View All</a>                        
+                       <a class="iq-view-all" href="{{route('frontend.movie')}}">View All</a>
                     </div>
                     <div class="tvthrillers-contens">
                        <ul class="favorites-slider list-inline row p-0 mb-0 iq-rtl-direction">
                           <li class="slide-item">
-                             
+
                                 <div class="block-images position-relative">
                                    <div class="img-box">
                                       <img src="{{asset('frontend/images/tvthrillers/01.jpg')}}" class="img-fluid" alt="">
@@ -3981,10 +3981,10 @@
                                       </ul>
                                    </div>
                                 </div>
-                            
+
                           </li>
                           <li class="slide-item">
-                             
+
                                 <div class="block-images position-relative">
                                    <div class="img-box">
                                       <img src="{{asset('frontend/images/tvthrillers/02.jpg')}}" class="img-fluid" alt="">
@@ -4020,10 +4020,10 @@
                                       </ul>
                                    </div>
                                 </div>
-                             
+
                           </li>
                           <li class="slide-item">
-                             
+
                                 <div class="block-images position-relative">
                                    <div class="img-box">
                                       <img src="{{asset('frontend/images/tvthrillers/03.jpg')}}" class="img-fluid" alt="">
@@ -4059,10 +4059,10 @@
                                       </ul>
                                    </div>
                                 </div>
-                             
+
                           </li>
                           <li class="slide-item">
-                             
+
                                 <div class="block-images position-relative">
                                    <div class="img-box">
                                       <img src="{{asset('frontend/images/tvthrillers/04.jpg')}}" class="img-fluid" alt="">
@@ -4098,10 +4098,10 @@
                                       </ul>
                                    </div>
                                 </div>
-                             
+
                           </li>
                           <li class="slide-item">
-                             
+
                                 <div class="block-images position-relative">
                                    <div class="img-box">
                                       <img src="{{asset('frontend/images/tvthrillers/05.jpg')}}" class="img-fluid" alt="">
@@ -4137,7 +4137,7 @@
                                       </ul>
                                    </div>
                                 </div>
-                            
+
                           </li>
                        </ul>
                     </div>

@@ -9,58 +9,56 @@
                         </div>
                     </div>
                     <div class="iq-card-body">
-                        <form action="{{ route('dashboard.showList') }}">
+                        <form method="POST" action="{{ route('show.add') }}" enctype="multipart/form-data">
+                            @csrf
                             <div class="row">
                                 <div class="col-md-6 form-group">
-                                    <input type="text" class="form-control" placeholder="Title">
+                                    <input type="text" class="form-control" placeholder="Title" name="title">
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                    <option selected disabled="">Choose Language</option>
-                                    <option>English</option>
-                                    <option>Hindi</option>
-                                    <option>Tamil</option>
-                                    <option>Gujarati</option>
-                                    </select>                                 
-                                </div>
-                                <div class="col-md-6 form-group">
-                                    <select class="form-control" id="exampleFormControlSelect2">
-                                    <option selected disabled="">Show Category</option>
-                                    <option>Comedy</option>
-                                    <option>Crime</option>
-                                    <option>Drama</option>
-                                    <option>Horror</option>
-                                    <option>Romance</option>
+                                    <select class="form-control" id="exampleFormControlSelect1" name="producer">
+                                    <option selected disabled="">Choose Producer</option>
+                                        @foreach ($users as $user)
+                                            <option value="{{ $user->id }}">{{ Str::ucfirst($user->first_name ." ". $user->last_name)}}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <select class="form-control" id="exampleFormControlSelect3">
+                                    <select class="form-control" id="exampleFormControlSelect2" name="cat">
+                                    <option selected disabled="">Choose Category</option>
+                                        @foreach ($cats as $cat)
+                                            <option value="{{$cat->cid}}">{{$cat->nom}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <select class="form-control" id="exampleFormControlSelect3" name="quality">
                                     <option selected disabled="">Choose quality</option>
-                                    <option>Full HD</option>
-                                    <option>HD</option>
+                                    <option value="Full HD">Full HD</option>
+                                    <option value="HD">HD</option>
                                     </select>
                                 </div>
                                 <div class="col-md-6 form_gallery form-group">
                                     <label id="gallery2" for="form_gallery-upload">Upload Image</label>
-                                    <input data-name="#gallery2" id="form_gallery-upload" name="gallery"
+                                    <input data-name="#gallery2" id="form_gallery-upload" name="img_url"
                                     class="form_gallery-upload" type="file" accept=".png, .jpg, .jpeg">
                                 </div>
                                 <div class="col-md-6 form_gallery form-group">
                                     <label id="gallery3" for="show2">Upload Show Banner</label>
-                                    <input data-name="#gallery3" id="show2" name="gallery" class="form_gallery-upload"
+                                    <input data-name="#gallery3" id="show2" name="banner_url" class="form_gallery-upload"
                                     type="file" accept=".png, .jpg, .jpeg">
                                 </div>
                                 <div class="col-12 form-group">
-                                    <textarea id="text1" name="text" rows="5" class="form-control"
+                                    <textarea id="text1"  rows="5" class="form-control" name="description"
                                     placeholder="Description"></textarea>
                                 </div>
                             </div>
-                            <div class="row">
+                            {{-- <div class="row">
                                 <div class="col-12">
                                     <h5 class="text-white mb-3">Add Seasons</h5>
                                 </div>
-                            </div>
-                            <div class="row">
+                            </div> --}}
+                            {{-- <div class="row">
                                 <div class="col-lg-7">
                                     <div class="row">
                                     <div class="col-md-6 form-group">
@@ -105,7 +103,7 @@
                                     </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="row">
                                 <div class="col-12 form-group">
                                     <button type="submit" class="btn btn-primary">Submit</button>
