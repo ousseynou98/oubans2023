@@ -85,7 +85,7 @@ Route::group(['prefix' => 'dashboards','middleware' => 'auth'], function() {
   Route::get('/movie-list', [MovieController::class, 'index'])->name('dashboard.movieList');
   Route::get('/movie-show/{id}', [MovieController::class, 'show'])->name('dashboard.showMovie');
   Route::get('movie-edit/{id}', [MovieController::class, 'update'])->name('dashboard.editMovie');
-  Route::post('/update_saving_movie', [MovieController::class, 'updateSaving'])->name('dashboard.updateSavingMovie');
+  Route::put('/update_saving_movie/{id}', [MovieController::class, 'updateSaving'])->name('dashboard.updateSavingMovie');
 
   Route::get('/add-show', [DashboardController::class, 'addShow'])->name('dashboard.addShow');
 

@@ -55,7 +55,9 @@ class ShowController extends Controller
     {
         //
         $cats = $this->cat->all();
-        $users = $this->user->all();
+        //$users = $this->user->all();
+        $users = $this->user->where('user_type', 'producteur')->get();
+
 
 
         return view("dashboard.show.addShow", compact("cats", "users"));

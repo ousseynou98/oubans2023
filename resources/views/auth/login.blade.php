@@ -7,7 +7,7 @@
                 <div class="sign-user_card ">                    
                    <div class="sign-in-page-data">
                       <div class="sign-in-from w-100 m-auto">
-                         <h3 class="mb-3 text-center">Sign in</h3>
+                         <h3 class="mb-3 text-center">Connexion</h3>
                          <!-- Session Status -->
                             <x-auth-session-status class="mb-4" :status="session('status')" />
 
@@ -15,7 +15,7 @@
                             <x-auth-validation-errors class="mb-4" :errors="$errors" />
                             <form method="POST" action="{{ route('login') }}" data-toggle="validator" class="mt-4">
                                   {{csrf_field()}}
-                                  <div class="form-group">
+                                  <!-- <div class="form-group">
                                      <p class="text-center">Admin : admin@example.com , password</br>
                                         Demo Admin : demo@example.com , password</br>
                                         User : user@example.com , password</p>
@@ -27,20 +27,20 @@
                                        </select>
 
                                  
-                                 </div>
+                                 </div> -->
                                     <div class="form-group">  
                                     <label for="email">Email</label>                               
-                                       <input type="email" class="form-control mb-0" id="exampleInputEmail1" name="email" value="{{env('IS_DEMO') ? 'admin@example.com' : old('email')}}" required autocomplete="off" autofocus placeholder=" Enter email">
+                                       <input type="email" class="form-control mb-0" id="exampleInputEmail1" name="email" value="{{env('IS_DEMO') ? 'admin@example.com' : old('email')}}" required autocomplete="off" autofocus placeholder=" Email">
                                     </div>
                                     <div class="form-group">
-                                    <label for="password">Password</label>                                 
-                                       <input type="password" class="form-control mb-0" id="exampleInputPassword2" name="password" value="{{ env('IS_DEMO') ? 'password' : '' }}" required autocomplete="current-password" placeholder="Password">
+                                    <label for="password">Mot de passe</label>                                 
+                                       <input type="password" class="form-control mb-0" id="exampleInputPassword2" name="password" value="{{ env('IS_DEMO') ? 'password' : '' }}" required autocomplete="current-password" placeholder="Mot de passe">
                                     </div>
                                     <div class="sign-info">
-                                             <button type="submit" class="btn btn-primary">Sign in</button>
+                                             <button type="submit" class="btn btn-primary">Se connecter</button>
                                              <div class="custom-control custom-checkbox d-inline-block">
                                                 <input type="checkbox" class="custom-control-input" id="customCheck">
-                                                <label class="custom-control-label" for="customCheck">Remember Me</label>
+                                                <label class="custom-control-label" for="customCheck">Se souvenir de moi</label>
                                              </div>                                
                                     </div>
   
@@ -49,10 +49,10 @@
                    </div>
                    <div class="mt-3">
                         <div class="d-flex justify-content-center links">
-                           Don't have an account? <a href="{{route('register')}}" class="text-primary ml-2">Sign Up</a>
+                           Vous n'avez pas de compte ? <a href="{{route('register')}}" class="text-primary ml-2">Inscrivez-vous</a>
                         </div>
                         <div class="d-flex justify-content-center links">
-                           <a href="{{route('frontend.forgotpassword')}}" class="f-link">Forgot your password?</a>
+                           <a href="{{route('frontend.forgotpassword')}}" class="f-link">Mot de passe oublié?</a>
                         </div>
                      </div>
                    

@@ -21,7 +21,12 @@
                                         <input type="text" class="form-control" name="titre" placeholder="Title">
                                     </div>
                                     <div class="col-6 form-group">
-                                        <input type="text" class="form-control" name="producteur" placeholder="Producteur">
+                                        <select class="form-control" id="exampleFormControlSelect1" name="producteur">
+                                        <option selected disabled="">Choose Producer</option>
+                                            @foreach ($users as $user)
+                                                <option value="{{ $user->id }}">{{ Str::ucfirst($user->first_name ." ". $user->last_name)}}</option>
+                                            @endforeach
+                                        </select>
                                     </div>
                                     <div class="col-12 form_gallery form-group">
                                         <label id="gallery2" for="form_gallery-upload">Upload Image</label>
@@ -38,7 +43,7 @@
                                     </div>
                                     
                                     <div class="col-12 form-group">
-                                        <textarea id="text" name="text" rows="5" name="description" class="form-control"
+                                        <textarea id="text"  rows="5" name="description" class="form-control"
                                             placeholder="Description"></textarea>
                                     </div>
                                     </div>

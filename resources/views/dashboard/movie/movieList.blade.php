@@ -29,7 +29,10 @@
                                             <td>
                                             <div class="media align-items-center">
                                                 <div class="iq-movie">
-                                                    <a href="javascript:void(0);"><img src="{{ asset('dashboard/images/movie-thumb/06.jpg') }}" class="img-border-radius avatar-40 img-fluid" alt=""></a>
+                                                <?php
+                                                    $couverture = explode(',', $movie->image)[0];
+                                                ?>
+                                                    <a href="javascript:void(0);"><img src="{{ asset('assets/films/couvertures/'.$couverture) }}" class="img-border-radius avatar-40 img-fluid" alt=""></a>
                                                 </div>
                                                 <div class="media-body text-white text-left ml-3">
                                                     <p class="mb-0">{{$movie->titre}}</p>

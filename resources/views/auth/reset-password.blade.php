@@ -8,8 +8,8 @@
                             <div class="auth-logo">
                                 <img src="{{asset('images/logo.png')}}" class="img-fluid rounded-normal" alt="logo">
                             </div>
-                            <h2 class="mb-2 text-center">Reset Password</h2>
-                            <p>Enter your email address and we'll send you an email with instructions to reset your password.</p>
+                            <h2 class="mb-2 text-center">Réinitialiser  mot de passe</h2>
+                            <p>Entrez votre adresse e-mail et nous vous enverrons un e-mail avec des instructions pour réinitialiser votre mot de passe.</p>
                             <form>
                                 <div class="row">
                                     <div class="col-lg-12">
