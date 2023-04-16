@@ -22,6 +22,7 @@ class User extends Authenticatable implements MustVerifyEmail, HasMedia
      */
     protected $fillable = [
         'username',
+        'user_type',
         'first_name',
         'last_name',
         'phone_number',
@@ -50,7 +51,7 @@ class User extends Authenticatable implements MustVerifyEmail, HasMedia
         'email_verified_at' => 'datetime',
     ];
 
-    
+
     protected $appends = ['full_name'];
 
     public function getFullNameAttribute()

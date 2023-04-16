@@ -54,8 +54,8 @@
                    class="ri-arrow-right-s-line iq-arrow-right"></i>
                 </a>
                 <ul id="show" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
-                   <li class="{{activeRouteName('dashboard.addShow')}}"><a href="{{ route('dashboard.addShow') }}"><i class="las la-user-plus"></i>Add Show</a></li>
-                   <li class="{{activeRouteName('dashboard.showList')}}"><a href="{{ route('dashboard.showList') }}"><i class="las la-eye"></i>Show List</a></li>
+                   <li class="{{activeRouteName('dashboard.addShow')}}"><a href="{{ route('show.create') }}"><i class="las la-user-plus"></i>Add Show</a></li>
+                   <li class="{{activeRouteName('dashboard.showList')}}"><a href="{{ route('show.list') }}"><i class="las la-eye"></i>Show List</a></li>
                 </ul>
              </li>
              @endcan
@@ -94,7 +94,7 @@
                          <li class="{{activeRouteName('ui.colors')}}"><a href="{{ route('ui.tooltips') }}"><i class="las la-magnet"></i>Tooltips</a></li>
                       </ul>
                    </li>
-                  
+
                    <li class="form">
                       <a href="#forms" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="lab la-wpforms"></i><span>Forms</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                       <ul id="forms" class="iq-submenu collapse" data-parent="#ui-elements">

@@ -7,10 +7,12 @@ use App\Http\Controllers\Security\RoleController;
 use App\Http\Controllers\Security\PermissionController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\MovieController;
+use App\Http\Controllers\ShowController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SliderController;
 
 
+use App\Http\Controllers\EpisodeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,7 +33,7 @@ Route::group(['middleware' => 'auth'], function () {
   Route::resource('permission',PermissionController::class);
   Route::resource('role', RoleController::class);
 
-  
+
   // Users Module
   Route::resource('users', UserController::class);
 });
@@ -58,7 +60,7 @@ Route::group(['prefix' => ''], function() {
   Route::get('/watchvideo', [FrontendController::class, 'watchvideo'])->name('frontend.watchvideo');
   Route::get('/blog', [FrontendController::class, 'blog'])->name('frontend.blog');
   Route::get('/blogdetails', [FrontendController::class, 'blogdetails'])->name('frontend.blogdetails');
-  
+
 });
 
 Route::group(['prefix' => 'dashboards','middleware' => 'auth'], function() {
@@ -84,8 +86,30 @@ Route::group(['prefix' => 'dashboards','middleware' => 'auth'], function() {
   Route::get('/movie-show/{id}', [MovieController::class, 'show'])->name('dashboard.showMovie');
   Route::get('movie-edit/{id}', [MovieController::class, 'update'])->name('dashboard.editMovie');
   Route::post('/update_saving_movie', [MovieController::class, 'updateSaving'])->name('dashboard.updateSavingMovie');
-  
+
   Route::get('/add-show', [DashboardController::class, 'addShow'])->name('dashboard.addShow');
+
+
+  Route::get('/create-show', [ShowController::class, 'create'])->name('show.create');
+  Route::post('/add-show', [ShowController::class, 'store'])->name('show.add');
+  Route::get('/list-show', [ShowController::class, 'index'])->name('show.list');
+  Route::get('/edit-show/{id}', [ShowController::class, 'edit'])->name('show.edit');
+  Route::post('/update-show/{id}', [ShowController::class, 'update'])->name('show.update');
+
+  Route::get('/detail-show/{id}', [ShowController::class, 'show'])->name('show.show');
+
+
+  Route::get('/create-episode/{id}', [EpisodeController::class, 'create'])->name('episode.create');
+  Route::post('/add-episode/{id}', [EpisodeController::class, 'store'])->name('episode.add');
+  Route::get('/list-episode/{id}', [EpisodeController::class, 'index'])->name('episode.list');
+  Route::get('/edit-episode/{id}', [EpisodeController::class, 'edit'])->name('episode.edit');
+  Route::post('/update-episode/{id}', [EpisodeController::class, 'update'])->name('episode.update');
+  Route::get('/destroy-episode/{id}', [EpisodeController::class, 'destroy'])->name('episode.delete');
+
+  Route::get('/detail-episode/{id}', [EpisodeController::class, 'show'])->name('episode.show');
+//   Route::get('/update-show', [ShowController::class, 'update'])->name('show.update');
+  Route::get('/destroy-show', [ShowController::class, 'destroy'])->name('show.destroy');
+
   Route::get('/show-list', [DashboardController::class, 'showList'])->name('dashboard.showList');
 
   Route::get('/page-pricing', [DashboardController::class, 'pricing'])->name('dashboard.pricing');
@@ -93,9 +117,9 @@ Route::group(['prefix' => 'dashboards','middleware' => 'auth'], function() {
   Route::get('/privacy-policy', [DashboardController::class, 'privacyPolicy'])->name('dashboard.privacyPolicy');
 
   Route::get('/terms-of-service', [DashboardController::class, 'termsOfService'])->name('dashboard.termsOfService');
- 
+
   Route::get('/pages-confirm-mail', [DashboardController::class, 'pageConfirmMail'])->name('dashboard.pageConfirmMail');
-  
+
   //UI Pages Routes
   Route::group(['prefix' => 'ui'], function() {
     Route::get('alerts', [DashboardController::class, 'UiAlerts'])->name('ui.alerts');
@@ -126,7 +150,7 @@ Route::group(['prefix' => 'dashboards','middleware' => 'auth'], function() {
     Route::get('form-radio', [DashboardController::class, 'formRadio'])->name('forms.radio');
     Route::get('form-switch', [DashboardController::class, 'formSwitch'])->name('forms.switch');
     Route::get('form-validation', [DashboardController::class, 'formValidation'])->name('forms.validation');
-    
+
   });
 
   Route::group(['prefix' => 'formsWizard'], function() {
@@ -166,7 +190,7 @@ Route::group(['prefix' => 'dashboards','middleware' => 'auth'], function() {
     Route::get('comming-soon', [DashboardController::class, 'commingSoon'])->name('extraPage.commingSoon');
     Route::get('faq', [DashboardController::class, 'faq'])->name('extraPage.faq');
   });
- 
-  
+
+
 });
 
