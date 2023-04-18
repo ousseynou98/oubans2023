@@ -56,11 +56,7 @@ Route::group(['prefix' => ''], function() {
   Route::get('/settings', [FrontendController::class, 'settings'])->name('frontend.settings');
   Route::get('/forgotpassword', [FrontendController::class, 'forgotpassword'])->name('frontend.forgotpassword');
   Route::get('/moviedetails', [FrontendController::class, 'moviedetails'])->name('frontend.moviedetails');
-<<<<<<< HEAD
   Route::get('showmoviedetails/{id}', [MovieController::class, 'showdetails'])->name('showmoviedetails');
-=======
-  Route::get('showdetails', [MovieController::class, 'showdetails'])->name('frontend.showdetails');
->>>>>>> a01eadd3925d02cd621fc7060bc6d1ec206becb6
   //Route::get('movie-edit/{id}', [MovieController::class, 'update'])->name('dashboard.editMovie');
   Route::get('/showsingle', [FrontendController::class, 'showsingle'])->name('frontend.showsingle');
   Route::get('/watchvideo', [FrontendController::class, 'watchvideo'])->name('frontend.watchvideo');
@@ -68,7 +64,7 @@ Route::group(['prefix' => ''], function() {
   Route::get('/blogdetails', [FrontendController::class, 'blogdetails'])->name('frontend.blogdetails');
   Route::post('/validation', [PurchaseController::class, 'post'])->name('validation');
 
-  
+
 
 });
 
