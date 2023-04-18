@@ -43,7 +43,7 @@ Route::group(['prefix' => ''], function() {
   //Route::get('/', [FrontendController::class, 'index'])->name('frontend.home');
   Route::get('/', [FrontendController::class, 'index'])->name('frontend.home');
   Route::get('/movie', [MovieController::class, 'indexFront'])->name('frontend.movie');
-  Route::get('/show', [FrontendController::class, 'show'])->name('frontend.show');
+  Route::get('/show', [ShowController::class, 'frontSeries'])->name('frontend.show');
   Route::get('/about', [FrontendController::class, 'about'])->name('frontend.about');
   Route::get('/contact', [FrontendController::class, 'contact'])->name('frontend.contact');
   Route::get('/faq', [FrontendController::class, 'faq'])->name('frontend.faq');
@@ -54,7 +54,7 @@ Route::group(['prefix' => ''], function() {
   Route::get('/settings', [FrontendController::class, 'settings'])->name('frontend.settings');
   Route::get('/forgotpassword', [FrontendController::class, 'forgotpassword'])->name('frontend.forgotpassword');
   Route::get('/moviedetails', [FrontendController::class, 'moviedetails'])->name('frontend.moviedetails');
-  Route::get('showdetails/{id}', [MovieController::class, 'showdetails'])->name('showdetails');
+  Route::get('showdetails', [MovieController::class, 'showdetails'])->name('frontend.showdetails');
   //Route::get('movie-edit/{id}', [MovieController::class, 'update'])->name('dashboard.editMovie');
   Route::get('/showsingle', [FrontendController::class, 'showsingle'])->name('frontend.showsingle');
   Route::get('/watchvideo', [FrontendController::class, 'watchvideo'])->name('frontend.watchvideo');
