@@ -8,11 +8,12 @@ use App\Models\Langue;
 use App\Models\Movies;
 use Illuminate\Support\Facades\DB;
 use Intervention\Image\ImageManager;
+use App\Models\User;
 
 
 class MovieController extends Controller
 {
-
+    
     public function index()
     {
 
@@ -28,7 +29,8 @@ class MovieController extends Controller
 
         $categories=Categorie::all();
         $langues=Langue::all();
-        return view('dashboard.movie.movieList', compact('categories','langues','movies'));
+        $users = User::where('user_type', 'producteur')->get();
+        return view('dashboard.movie.movieList', compact('categories','langues','movies','users'));
     }
 
     public function store (Request $request){
@@ -51,69 +53,113 @@ class MovieController extends Controller
            
        }
        //couverture
-       if (!empty($file2 = $request->file('image'))) {
-            $extension = $file2->getClientOriginalExtension();
-            $filename = 'image_' . uniqid() . '_'.$movie->id;
-            $fichier2 = public_path('/assets/films/couvertures');
-            $image = (new ImageManager)->make($file2);
-            $image_small = $image->resize(320, 180);
-            $image_small_filename = $filename . '_small';
-            $image_small->save($fichier2 . '/' . $image_small_filename.'_'. $image_small->getWidth() .'x'. $image_small->getHeight().'.'.$extension);
-            $image_sizes = $image_small_filename .'_'. $image_small->getWidth() .'x'. $image_small->getHeight().'.'.$extension;
-            $image_large = $image->resize(1280, 720);
-            $image_large_filename = $filename . '_large';
-            $image_large->save($fichier2 . '/' . $image_large_filename.'_'. $image_small->getWidth() .'x'. $image_small->getHeight().'.'.$extension);
-            $image_sizes .= ',' . $image_large_filename .'_'. $image_large->getWidth() .'x'. $image_large->getHeight().'.'.$extension;
-            $movie->image = $image_sizes;
+       if (!empty($file = $request->file('image'))) {
+        $filename = 'image-' . time() . '.' . $file->getClientOriginalExtension();
+        $fichier=public_path('/assets/films/couvertures');
+        $movie->image=$filename;
+        $path = $file->move($fichier, $filename);
         }
-
        
        $movie->save();
 
       return redirect('/dashboards/movie-list')->with('success','Votre film a été ajouté avec succès');
     }
 
-    public function updateSaving(Request $request ,$id){
+    // public function updateSaving(Request $request ,$id){
    
+    //     $movie= Movies::find($id);
+    //     $movie->titre=$request->input('titre');
+    //    $movie->producteur=$request->input('producteur');
+    //    $movie->id_categorie=$request->input('categorie');
+    //    $movie->description=$request->input('description');
+    //    $movie->id_langue=$request->input('langue');
+    //    $movie->duree=$request->input('duree');
+    //    $movie->annee=$request->input('annee');
+
+    //    if (!empty($file = $request->file('video'))) {
+
+    //        $filename = 'movie-' . time() . '.' . $file->getClientOriginalExtension();
+    //        $fichier=public_path('/assets/films/videos');
+    //        $movie->video=$filename;
+    //        $path = $file->move($fichier, $filename);
+           
+    //    }
+    //    //couverture
+    //    if (!empty($file2 = $request->file('image'))) {
+    //         $extension = $file2->getClientOriginalExtension();
+    //         $filename = 'image_' . uniqid() . '_'.$movie->id;
+    //         $fichier2 = public_path('/assets/films/couvertures');
+    //         $image = (new ImageManager)->make($file2);
+    //         $image_small = $image->resize(320, 180);
+    //         $image_small_filename = $filename . '_small';
+    //         $image_small->save($fichier2 . '/' . $image_small_filename.'_'. $image_small->getWidth() .'x'. $image_small->getHeight().'.'.$extension);
+    //         $image_sizes = $image_small_filename .'_'. $image_small->getWidth() .'x'. $image_small->getHeight().'.'.$extension;
+    //         $image_large = $image->resize(1280, 720);
+    //         $image_large_filename = $filename . '_large';
+    //         $image_large->save($fichier2 . '/' . $image_large_filename.'_'. $image_small->getWidth() .'x'. $image_small->getHeight().'.'.$extension);
+    //         $image_sizes .= ',' . $image_large_filename .'_'. $image_large->getWidth() .'x'. $image_large->getHeight().'.'.$extension;
+    //         $movie->image = $image_sizes;
+    //     }
+       
+    //    $movie->update();
+
+    //    return redirect('/dashboards/movie-list')->with('success','Votre film a été modifié avec succès');
+        
+    // }
+
+    public function updateSaving(Request $request, $id){
         $movie= Movies::find($id);
         $movie->titre=$request->input('titre');
-       $movie->producteur=$request->input('producteur');
-       $movie->id_categorie=$request->input('categorie');
-       $movie->description=$request->input('description');
-       $movie->id_langue=$request->input('langue');
-       $movie->duree=$request->input('duree');
-       $movie->annee=$request->input('annee');
-
-       if (!empty($file = $request->file('video'))) {
-
-           $filename = 'movie-' . time() . '.' . $file->getClientOriginalExtension();
-           $fichier=public_path('/assets/films/videos');
-           $movie->video=$filename;
-           $path = $file->move($fichier, $filename);
-           
-       }
-       //couverture
-       if (!empty($file2 = $request->file('image'))) {
-           $filename2 = 'image-' . time() . '.' . $file2->getClientOriginalExtension();
-       
-           $fichier2=public_path('/assets/films/couvertures');
-           $movie->image=$filename2;
-       
-           $path2 = $file2->move($fichier2, $filename2);
-       }
-       
-       $movie->update();
-
-       return redirect('/dashboards/movie-list')->with('success','Votre film a été modifié avec succès');
-        
+        $movie->producteur=$request->input('producteur');
+        $movie->id_categorie=$request->input('categorie');
+        $movie->description=$request->input('description');
+        $movie->id_langue=$request->input('langue');
+        $movie->duree=$request->input('duree');
+        $movie->annee=$request->input('annee');
+    
+        // Update video file
+        if (!empty($file = $request->file('video'))) {
+            $filename = 'movie-' . time() . '.' . $file->getClientOriginalExtension();
+            $fichier=public_path('/assets/films/videos');
+            $movie->video=$filename;
+            $path = $file->move($fichier, $filename);
+            if ($request->has('delete_video') && $request->input('delete_video')) {
+                $old_file = public_path('/assets/films/videos/') . $movie->video;
+                if (file_exists($old_file)) {
+                    unlink($old_file);
+                }
+                $movie->video = null;
+            }
+        }
+    
+        // Update image files
+        if (!empty($file = $request->file('image'))) {
+            $filename = 'image-' . time() . '.' . $file->getClientOriginalExtension();
+            $fichier=public_path('/assets/films/couvertures');
+            $movie->image=$filename;
+            $path = $file->move($fichier, $filename);
+            if ($request->has('delete_image') && $request->input('delete_image')) {
+                $old_file = public_path('/assets/films/couvertures/') . $movie->image;
+                if (file_exists($old_file)) {
+                    unlink($old_file);
+                }
+                $movie->image = null;
+            }
+        }
+    
+        $movie->update();
+    
+        return redirect('/dashboards/movie-list')->with('success','Votre film a été modifié avec succès');
     }
+    
 
 
     public function addMovie()
     {
-        $categories=Categorie::all();
+        $categories=Categorie::all(); 
         $langues=Langue::all();
-        return view('dashboard.movie.addMovie', compact('categories','langues'));
+        $users = User::where('user_type', 'producteur')->get();
+        return view('dashboard.movie.addMovie', compact('categories','langues','users'));
     }
 
     public function show($id)
@@ -148,7 +194,8 @@ class MovieController extends Controller
             );
         $categories=Categorie::all();
         $langues=Langue::all();
-        return view('dashboard.movie.editMovie', compact( 'movie','categories','langues'));
+        $users = User::where('user_type', 'producteur')->get();
+        return view('dashboard.movie.editMovie', compact( 'movie','categories','langues','users'));
     }
 
     public function indexFront()
@@ -183,5 +230,17 @@ class MovieController extends Controller
         $langues=Langue::all();
 
         return view('frontend.showdetails', compact('categories','langues','movie'));
+    }
+
+    public function deleteMovie($id) {
+        $movie = Movies::findOrFail($id);
+        if ($movie->image && file_exists(public_path('/assets/films/couvertures/' . $movie->image))) {
+            unlink(public_path('/assets/films/couvertures/' . $movie->image));
+        }
+        if ($movie->video && file_exists(public_path('/assets/films/videos/' . $movie->video))) {
+            unlink(public_path('/assets/films/videos/' . $movie->video));
+        }
+        $movie->delete();
+        return redirect('/dashboards/movie-list')->with('success', 'Le film a été supprimé avec succès');
     }
 }

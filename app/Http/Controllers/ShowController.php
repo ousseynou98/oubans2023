@@ -55,7 +55,9 @@ class ShowController extends Controller
     {
         //
         $cats = $this->cat->all();
-        $users = $this->user->all();
+        //$users = $this->user->all();
+        $users = $this->user->where('user_type', 'producteur')->get();
+
 
 
         return view("dashboard.show.addShow", compact("cats", "users"));
@@ -207,5 +209,24 @@ class ShowController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+
+    public function frontSeries()
+    {
+        # code...
+
+        $categories = $this->cat->all();
+        $shows = $this->show->join($this->cat->getTable(), $this->cat->getTable().".id", "=", $this->show->getTable().".cat")
+        ->get([
+            $this->show->getTable().".*",
+            $this->cat->getTable().".id as cid",
+            $this->cat->getTable().".nom"
+        ]);
+        $this->user->all();
+
+        // dd($categories);
+
+        return view("frontend.show", compact("shows",   "categories"));
     }
 }

@@ -27,7 +27,7 @@
                                     <select class="form-control" id="exampleFormControlSelect2" name="cat">
                                     <option selected disabled="">Choose Category</option>
                                         @foreach ($cats as $cat)
-                                            <option value="{{$cat->cid}}">{{$cat->nom}}</option>
+                                            <option value="{{$cat->id}}">{{$cat->nom}}</option>
                                         @endforeach
                                     </select>
                                 </div>

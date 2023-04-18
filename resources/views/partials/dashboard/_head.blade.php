@@ -1,4 +1,4 @@
-<link rel="shortcut icon" href="{{ asset('dashboard/images/favicon.ico') }}"/>
+<link rel="shortcut icon" href="{{ asset('dashboard/images/icon.png') }}"/>
 <link rel="stylesheet" href="{{ asset('dashboard/css/bootstrap.min.css') }}" />
 <link rel="stylesheet" href="{{ asset('dashboard/css/dark.css') }}" />
 <link rel="stylesheet" href="{{ asset('dashboard/css/developer.css') }}" />

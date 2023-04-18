@@ -29,7 +29,8 @@
                                             <td>
                                             <div class="media align-items-center">
                                                 <div class="iq-movie">
-                                                    <a href="javascript:void(0);"><img src="{{ asset('dashboard/images/movie-thumb/06.jpg') }}" class="img-border-radius avatar-40 img-fluid" alt=""></a>
+                                                
+                                                    <a href="javascript:void(0);"><img src="{{ asset('assets/films/couvertures/'.$movie->image) }}" class="img-border-radius avatar-40 img-fluid" alt=""></a>
                                                 </div>
                                                 <div class="media-body text-white text-left ml-3">
                                                     <p class="mb-0">{{$movie->titre}}</p>
@@ -45,7 +46,13 @@
                                             <div class="flex align-items-center list-user-action">
                                                 <a class="iq-bg-warning" data-toggle="tooltip" data-placement="top" title="" data-original-title="View" href="{{ route('dashboard.showMovie', ['id' => $movie->id]) }}"><i class="lar la-eye"></i></a>
                                                 <a class="iq-bg-success" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="{{ route('dashboard.editMovie', ['id' => $movie->id]) }}"><i class="ri-pencil-line"></i></a>
-                                                <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
+                                                <!-- <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a> -->
+                                                <form id="delete-movie-form-{{ $movie->id }}" action="{{ route('dashboard.deleteMovie', $movie->id) }}" method="POST" style="display: none;">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                </form>
+
+                                                <a class="iq-bg-primary" href="#" onclick="event.preventDefault(); document.getElementById('delete-movie-form-{{ $movie->id }}').submit();" data-toggle="tooltip" data-placement="top" title="Supprimer"><i class="ri-delete-bin-line"></i></a>
                                             </div>
                                             </td>
                                         </tr>

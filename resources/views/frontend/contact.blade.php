@@ -1,6 +1,6 @@
 <x-layouts.frontend>
     <body>
-        <div class="iq-breadcrumb-one  iq-bg-over iq-over-dark-50" style="background-image:url({{url('frontend/images/about-us/01.jpg')}});">  
+        <div class="iq-breadcrumb-one  iq-bg-over iq-over-dark-50" style="background-image:url({{url('frontend/images/about-us/banner.jpg')}});">  
             <div class="container-fluid"> 
                 <div class="row align-items-center">
                     <div class="col-sm-12">

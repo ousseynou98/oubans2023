@@ -18,6 +18,7 @@
                        <!-- <span>S1E01</span>
                        <span class="trending-year">Lorem Ipsum is dummy text</span> -->
                     </div>
+                    <button class="buy" onclick="buy(this)" data-item-id="88" >Acheter iphone (450000 XOF)</button>
                     <p class="trending-dec w-100 mb-0"><br>{{$movie->description}}</p>
                     <br><br><br><br>
                     <!-- <ul class="list-inline p-0 mt-4 share-icons music-play-lists">
@@ -38,8 +39,8 @@
               </div>
            </div>
         </section>
-        
      </div>
+     
 </body>
 
 </x-layouts.frontend>
@@ -77,6 +78,60 @@
         seekTime: 1,
     });
    
+</script>
+<script src="https://paytech.sn/cdn/paytech.min.js"></script>
+<script>               
+   //  function buy(btn) {
+    
+   //      (new PayTech({
+        
+   //      })).withOption({
+   //          requestTokenUrl           :   "/validation",
+   //          method              :   'POST',
+   //          headers             :   {
+   //              // "Accept"          :    "text/html"
+   //          },
+   //          prensentationMode   :   PayTech.OPEN_IN_POPUP,
+   //          willGetToken        :   function () {
+
+   //          },
+   //          didGetToken         : function (token, redirectUrl) {
+
+   //          },
+   //          didReceiveError: function (error) {
+   //              // console.log(error);
+   //          },
+   //          didReceiveNonSuccessResponse: function (jsonResponse) {
+   //              // console.log(jsonResponse);
+   //          }
+   //      }).send();
+
+   //      // .send params are optional
+   //  }
+
+   function buy(btn) {
+    // Récupération du jeton CSRF
+    const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+
+    // Configuration de la requête
+    const requestOptions = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRF-TOKEN': csrfToken,
+        },
+        body: JSON.stringify({
+            // Ajoutez les données de la requête ici
+        }),
+    };
+
+    // Envoi de la requête
+    fetch('/validation', requestOptions)
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error(error));
+}
+
 </script>
 <style>
    .plyr {

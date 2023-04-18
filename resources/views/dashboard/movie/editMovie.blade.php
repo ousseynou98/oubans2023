@@ -11,6 +11,7 @@
                     <div class="iq-card-body">
                         <form action="{{ route('dashboard.updateSavingMovie', ['id' => $movie[0]->id]) }}" method="post" enctype="multipart/form-data" >
                         @csrf
+                        @method('PUT')
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="row">
@@ -18,12 +19,21 @@
                                         <input type="text" class="form-control" name="titre" placeholder="Title" value="{{ $movie[0]->titre }}">
                                     </div>
                                     <div class="col-6 form-group">
-                                        <input type="text" class="form-control" name="producteur" placeholder="Producteur" value="{{ $movie[0]->producteur }}">
+                                        <select class="form-control" id="exampleFormControlSelect1" name="producteur">
+                                            <option selected disabled="">Choose Producer</option>
+                                                @foreach ($users as $user)
+                                                    <option value="{{ $user->id }}" @if($user->id == $movie[0]->producteur) selected @endif >{{ Str::ucfirst($user->first_name ." ". $user->last_name)}}</option>
+                                                @endforeach
+                                            </select>
+                                        <!-- <input type="text" class="form-control" name="producteur" placeholder="Producteur" value="{{ $movie[0]->producteur }}"> -->
                                     </div>
                                     
                                     <div class="col-2 form_gallery form-group">
+                                    <?php
+                                        //$couverture = explode(',', $movie[0]->image)[0];
+                                    ?>
                                         <!-- <label id="gallery2" for="form_gallery-upload">Image actuel</label> -->
-                                        <img src="{{ asset('assets/films/couvertures/'.$movie[0]->image) }}" alt="{{ $movie[0]->titre }}" class="img-fluid mb-3"  onclick="showModal(this)">
+                                        <img src="{{ asset('assets/films/couvertures/'.$movie[0]->image) }}" alt="{{ $movie[0]->image }}" class="img-fluid mb-3"  onclick="showModal(this)">
                                     </div>
                                     <div class="col-10 form_gallery form-group">
                                         <label id="gallery2" for="form_gallery-upload">Charger couverture</label>
@@ -40,7 +50,7 @@
                                     </div>
                                     
                                     <div class="col-12 form-group">
-                                        <textarea id="text" name="text" rows="5" name="description" class="form-control"
+                                        <textarea id="text"  rows="5" name="description" class="form-control"
                                             placeholder="Description">{{ $movie[0]->description }}</textarea>
                                     </div>
                                     </div>

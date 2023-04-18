@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
 use App\Models\User;
-use App\Providers\RouteServiceProvider;
-use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
+use Spatie\Permission\Models\Role;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Auth\Events\Registered;
+use App\Providers\RouteServiceProvider;
 
 class RegisteredUserController extends Controller
 {
@@ -19,7 +20,8 @@ class RegisteredUserController extends Controller
      */
     public function create()
     {
-        return view('auth.register');
+        $roles = Role::where('status',1)->whereNotIn('name', ['admin', 'demo_admin'])->get();
+        return view('auth.register',compact('roles'));
     }
 
     /**
@@ -46,13 +48,33 @@ class RegisteredUserController extends Controller
             'phone_number' => $request->phone_number,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'user_type' => 'user'
+            'user_type' => $request->role
         ]));
 
-        $user->assignRole('user');
+        $user->assignRole($request->role);
 
-        event(new Registered($user));
+        //event(new Registered($user));
 
-        return redirect(RouteServiceProvider::HOME);
+        //return redirect(RouteServiceProvider::HOME);
+
+        $userType = auth()->user()->user_type;
+
+        switch ($userType) {
+            case 'admin':
+                return redirect('/admin/dashboard');
+                break;
+    
+            case 'producteur':
+                return redirect('/producteur/dashboard');
+                break;
+    
+            case 'spectateur':
+                return redirect('/');
+                break;
+    
+            default:
+                return redirect('/');
+        }
+
     }
 }

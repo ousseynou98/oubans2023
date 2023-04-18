@@ -31,12 +31,12 @@ class AuthenticatedSessionController extends Controller
     public function store(LoginRequest $request)
     {
         $request->authenticate();
-        if(isset(request()->role)){
-            if(!Auth::user()->hasRole(request()->role)) {
-                Auth::logout();
-                return redirect()->route('login')->withErrors('You are not authorized to access this page.');
-            }
-        }
+        // if(isset(request()->role)){
+        //     if(!Auth::user()->hasRole(request()->role)) {
+        //         Auth::logout();
+        //         return redirect()->route('login')->withErrors('You are not authorized to access this page.');
+        //     }
+        // }
 
         $request->session()->regenerate();
 

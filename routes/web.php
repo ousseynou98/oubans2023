@@ -1,18 +1,20 @@
 <?php
 
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\FrontendController;
-use App\Http\Controllers\Security\RolePermission;
-use App\Http\Controllers\Security\RoleController;
-use App\Http\Controllers\Security\PermissionController;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ShowController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\MovieController;
-use App\Http\Controllers\ShowController;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SliderController;
-
-
+use Symfony\Component\Console\Input\Input;
 use App\Http\Controllers\EpisodeController;
+use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\PurchaseController;
+use App\Http\Controllers\DashboardController;
+
+
+use App\Http\Controllers\Security\RoleController;
+use App\Http\Controllers\Security\RolePermission;
+use App\Http\Controllers\Security\PermissionController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -43,7 +45,7 @@ Route::group(['prefix' => ''], function() {
   //Route::get('/', [FrontendController::class, 'index'])->name('frontend.home');
   Route::get('/', [FrontendController::class, 'index'])->name('frontend.home');
   Route::get('/movie', [MovieController::class, 'indexFront'])->name('frontend.movie');
-  Route::get('/show', [FrontendController::class, 'show'])->name('frontend.show');
+  Route::get('/show', [ShowController::class, 'frontSeries'])->name('frontend.show');
   Route::get('/about', [FrontendController::class, 'about'])->name('frontend.about');
   Route::get('/contact', [FrontendController::class, 'contact'])->name('frontend.contact');
   Route::get('/faq', [FrontendController::class, 'faq'])->name('frontend.faq');
@@ -54,12 +56,19 @@ Route::group(['prefix' => ''], function() {
   Route::get('/settings', [FrontendController::class, 'settings'])->name('frontend.settings');
   Route::get('/forgotpassword', [FrontendController::class, 'forgotpassword'])->name('frontend.forgotpassword');
   Route::get('/moviedetails', [FrontendController::class, 'moviedetails'])->name('frontend.moviedetails');
-  Route::get('showdetails/{id}', [MovieController::class, 'showdetails'])->name('showdetails');
+<<<<<<< HEAD
+  Route::get('showmoviedetails/{id}', [MovieController::class, 'showdetails'])->name('showmoviedetails');
+=======
+  Route::get('showdetails', [MovieController::class, 'showdetails'])->name('frontend.showdetails');
+>>>>>>> a01eadd3925d02cd621fc7060bc6d1ec206becb6
   //Route::get('movie-edit/{id}', [MovieController::class, 'update'])->name('dashboard.editMovie');
   Route::get('/showsingle', [FrontendController::class, 'showsingle'])->name('frontend.showsingle');
   Route::get('/watchvideo', [FrontendController::class, 'watchvideo'])->name('frontend.watchvideo');
   Route::get('/blog', [FrontendController::class, 'blog'])->name('frontend.blog');
   Route::get('/blogdetails', [FrontendController::class, 'blogdetails'])->name('frontend.blogdetails');
+  Route::post('/validation', [PurchaseController::class, 'post'])->name('validation');
+
+  
 
 });
 
@@ -85,7 +94,8 @@ Route::group(['prefix' => 'dashboards','middleware' => 'auth'], function() {
   Route::get('/movie-list', [MovieController::class, 'index'])->name('dashboard.movieList');
   Route::get('/movie-show/{id}', [MovieController::class, 'show'])->name('dashboard.showMovie');
   Route::get('movie-edit/{id}', [MovieController::class, 'update'])->name('dashboard.editMovie');
-  Route::post('/update_saving_movie', [MovieController::class, 'updateSaving'])->name('dashboard.updateSavingMovie');
+  Route::put('/update_saving_movie/{id}', [MovieController::class, 'updateSaving'])->name('dashboard.updateSavingMovie');
+  Route::delete('/movie/{id}', [MovieController::class, 'deleteMovie'])->name('dashboard.deleteMovie');
 
   Route::get('/add-show', [DashboardController::class, 'addShow'])->name('dashboard.addShow');
 
