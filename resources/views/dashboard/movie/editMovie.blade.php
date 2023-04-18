@@ -30,10 +30,10 @@
                                     
                                     <div class="col-2 form_gallery form-group">
                                     <?php
-                                        $couverture = explode(',', $movie[0]->image)[0];
+                                        //$couverture = explode(',', $movie[0]->image)[0];
                                     ?>
                                         <!-- <label id="gallery2" for="form_gallery-upload">Image actuel</label> -->
-                                        <img src="{{ asset('assets/films/couvertures/'.$couverture) }}" alt="{{ $couverture }}" class="img-fluid mb-3"  onclick="showModal(this)">
+                                        <img src="{{ asset('assets/films/couvertures/'.$movie[0]->image) }}" alt="{{ $movie[0]->image }}" class="img-fluid mb-3"  onclick="showModal(this)">
                                     </div>
                                     <div class="col-10 form_gallery form-group">
                                         <label id="gallery2" for="form_gallery-upload">Charger couverture</label>

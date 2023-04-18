@@ -7,13 +7,13 @@
 
             @foreach($movies as $movie)
                <div>
-                  <a href="{{ route('frontend.moviedetails') }}">
+                  <a href="{{ route('showdetails', ['id' => $movie->id]) }}">
                         <div class="shows-img">
                            <?php
                            
-                           $couverture = explode(',', $movie->image)[1];
+                           //$couverture = explode(',', $movie->image)[1];
                            ?>
-                           <img src="{{ asset('assets/films/couvertures/'.$couverture) }}" class="w-100" alt="">
+                           <img src="{{ asset('assets/films/couvertures/'.$movie->image) }}" class="w-100" alt="">
                            <div class="shows-content">
                               <h4 class="text-white mb-1">{{  $movie->titre }}</h4>
                               <div class="movie-time d-flex align-items-center">
@@ -59,12 +59,12 @@
                               <ul class="favorites-slider list-inline  row p-0 mb-0 iq-rtl-direction">
                               @foreach($moviesByCategory as $movie)
                               <?php
-                                 $couverture = explode(',', $movie->image)[0];
+                                 //$couverture = explode(',', $movie->image)[0];
                               ?>
                                  <li class="slide-item">
                                        <div class="block-images position-relative">
                                           <div class="img-box">
-                                             <img src="{{ asset('assets/films/couvertures/'.$couverture) }}" class="img-fluid" alt="">
+                                             <img src="{{ asset('assets/films/couvertures/'.$movie->image) }}" class="img-fluid" alt="">
                                           </div>
                                           <div class="block-description">
                                              <h6 class="iq-title"><a href="{{ route('showdetails', ['id' => $movie->id]) }}">{{ $movie->titre }}</a></h6>
@@ -73,9 +73,11 @@
                                                 <span class="text-white">{{ $movie->duree }}</span>
                                              </div>
                                              <div class="hover-buttons">
-                                                <span class="btn btn-hover"><i class="fa fa-play mr-1" aria-hidden="true"></i>
-                                                   Visionner
-                                                </span>
+                                                <a href="{{ route('showdetails', ['id' => $movie->id]) }}">
+                                                   <span class="btn btn-hover"><i class="fa fa-play mr-1" aria-hidden="true"></i>
+                                                      Visionner
+                                                   </span>
+                                                </a>
                                              </div>
                                           </div>
                                           <!-- <div class="block-social-info">

@@ -1,2 +1,2 @@
-<div id="loading-center">
-</div>
+<!-- <div id="loading-center">
+</div> -->

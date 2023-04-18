@@ -162,7 +162,7 @@
                                <a href="{{route('frontend.about')}}">à propos</a>
                             </li>
                             <li class="menu-item">
-                               <a href="{{route('frontend.about')}}">Contact</a>
+                               <a href="{{route('frontend.contact')}}">Contact</a>
                             </li>                                           
 <!--                             
                             <li class="menu-item">
@@ -186,7 +186,7 @@
                    
                    <div class="navbar-right menu-right">
                       <ul class="d-flex align-items-center list-inline m-0">
-                         <li class="nav-item nav-icon">
+                         <!-- <li class="nav-item nav-icon">
                             <a href="#" class="search-toggle device-search">
                             <i class="ri-search-line"></i>
                             </a>
@@ -246,45 +246,18 @@
                                   </div>
                                </div>
                             </div>
-                         </li>
+                         </li> -->
+                         
+
+                         @if(Auth::check())
                          <li class="nav-item nav-icon">
-                            <a href="#" class="iq-user-dropdown search-toggle p-0 d-flex align-items-center"
-                               data-toggle="search-toggle">
-                            <img src="{{asset('frontend/images/user/user.jpg')}}" class="img-fluid avatar-40 rounded-circle" alt="user">
-                            </a>
+                            <a href="#" class="iq-user-dropdown search-toggle p-0 d-flex align-items-center" data-toggle="search-toggle">
+                              <i class="material-icons" style="color: #e04ecb;font-size: 35px;">account_circle</i>
+                           </a>
                             <div class="iq-sub-dropdown iq-user-dropdown">
                                <div class="iq-card shadow-none m-0">
                                   <div class="iq-card-body p-0 pl-3 pr-3">
-                                     <a href="{{route('frontend.manageprofile')}}" class="iq-sub-card setting-dropdown">
-                                        <div class="media align-items-center">
-                                           <div class="right-icon">
-                                              <i class="ri-file-user-line text-primary"></i>
-                                           </div>
-                                           <div class="media-body ml-3">
-                                              <h6 class="my-0 ">Manage Profile</h6>
-                                           </div>
-                                        </div>
-                                     </a>
-                                     <a href="{{route('frontend.settings')}}" class="iq-sub-card setting-dropdown">
-                                        <div class="media align-items-center">
-                                           <div class="right-icon">
-                                              <i class="ri-settings-4-line text-primary"></i>
-                                           </div>
-                                           <div class="media-body ml-3">
-                                              <h6 class="my-0 ">Settings</h6>
-                                           </div>
-                                        </div>
-                                     </a>
-                                     <a href="{{route('frontend.pricingplan1')}}" class="iq-sub-card setting-dropdown">
-                                        <div class="media align-items-center">
-                                           <div class="right-icon">
-                                              <i class="ri-settings-4-line text-primary"></i>
-                                           </div>
-                                           <div class="media-body ml-3">
-                                              <h6 class="my-0 ">Pricing Plan</h6>
-                                           </div>
-                                        </div>
-                                     </a>
+                                     
                                      <form method="POST" action="{{route('logout')}}">
                                        @csrf
                                      <a href="javascript:void(0)" class="iq-sub-card setting-dropdown" onclick="event.preventDefault();
@@ -294,7 +267,7 @@
                                               <i class="ri-logout-circle-line text-primary"></i>
                                            </div>
                                            <div class="media-body ml-3">
-                                              <h6 class="my-0 ">Logout</h6>
+                                              <h6 class="my-0 ">Déconnexion</h6>
                                            </div>
                                         </div>
                                      </a>
@@ -305,6 +278,54 @@
                                </div>
                             </div>
                          </li>
+                           @else
+                              <li class="nav-item nav-icon">
+
+                              <div class="d-flex align-items-center">
+                                    
+
+                                    <li class="menu-item">
+                                       <a href="/login">Connexion</a>
+                                    </li>
+                                    <li class="menu-item">
+                                       <a href="/register">Incription</a>
+                                    </li> 
+                              </div>
+                                 <!-- <a href="{{ route('login') }}" class="iq-user-dropdown search-toggle p-0 d-flex align-items-center" data-toggle="search-toggle">
+                                       <i class="material-icons" style="color: #e04ecb;font-size: 35px;">account_circle</i>
+                                 </a>
+                                 <div class="iq-sub-dropdown iq-user-dropdown">
+                                       <div class="iq-card shadow-none m-0">
+                                          <div class="iq-card-body p-0 pl-3 pr-3">
+                                             <a href="{{ route('login') }}" class="iq-sub-card setting-dropdown">
+                                                   <div class="media align-items-center">
+                                                      <div class="right-icon">
+                                                         <i class="ri-login-circle-line text-primary"></i>
+                                                      </div>
+                                                      <div class="media-body ml-3">
+                                                         <h6 class="my-0 ">Connexion</h6>
+                                                      </div>
+                                                   </div>
+                                             </a>
+                                             <a href="{{ route('register') }}" class="iq-sub-card setting-dropdown">
+                                                   <div class="media align-items-center">
+                                                      <div class="right-icon">
+                                                         <i class="ri-pencil-line text-primary"></i>
+                                                      </div>
+                                                      <div class="media-body ml-3">
+                                                         <h6 class="my-0">Inscription</h6>
+                                                      </div>
+                                                   </div>
+                                             </a>
+                                          </div>
+                                       </div>
+                                 </div> -->
+                              </li>
+                           @endif
+
+
+
+
                       </ul>
                    </div>
                 </nav>

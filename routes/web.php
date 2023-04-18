@@ -86,6 +86,7 @@ Route::group(['prefix' => 'dashboards','middleware' => 'auth'], function() {
   Route::get('/movie-show/{id}', [MovieController::class, 'show'])->name('dashboard.showMovie');
   Route::get('movie-edit/{id}', [MovieController::class, 'update'])->name('dashboard.editMovie');
   Route::put('/update_saving_movie/{id}', [MovieController::class, 'updateSaving'])->name('dashboard.updateSavingMovie');
+  Route::delete('/movie/{id}', [MovieController::class, 'deleteMovie'])->name('dashboard.deleteMovie');
 
   Route::get('/add-show', [DashboardController::class, 'addShow'])->name('dashboard.addShow');
 

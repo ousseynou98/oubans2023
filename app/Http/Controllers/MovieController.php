@@ -53,22 +53,12 @@ class MovieController extends Controller
            
        }
        //couverture
-       if (!empty($file2 = $request->file('image'))) {
-            $extension = $file2->getClientOriginalExtension();
-            $filename = 'image_' . uniqid() . '_'.$movie->id;
-            $fichier2 = public_path('/assets/films/couvertures');
-            $image = (new ImageManager)->make($file2);
-            $image_small = $image->resize(320, 180);
-            $image_small_filename = $filename . '_small';
-            $image_small->save($fichier2 . '/' . $image_small_filename.'_'. $image_small->getWidth() .'x'. $image_small->getHeight().'.'.$extension);
-            $image_sizes = $image_small_filename .'_'. $image_small->getWidth() .'x'. $image_small->getHeight().'.'.$extension;
-            $image_large = $image->resize(1280, 720);
-            $image_large_filename = $filename . '_large';
-            $image_large->save($fichier2 . '/' . $image_large_filename.'_'. $image_small->getWidth() .'x'. $image_small->getHeight().'.'.$extension);
-            $image_sizes .= ',' . $image_large_filename .'_'. $image_large->getWidth() .'x'. $image_large->getHeight().'.'.$extension;
-            $movie->image = $image_sizes;
+       if (!empty($file = $request->file('image'))) {
+        $filename = 'image-' . time() . '.' . $file->getClientOriginalExtension();
+        $fichier=public_path('/assets/films/couvertures');
+        $movie->image=$filename;
+        $path = $file->move($fichier, $filename);
         }
-
        
        $movie->save();
 
@@ -133,7 +123,6 @@ class MovieController extends Controller
             $fichier=public_path('/assets/films/videos');
             $movie->video=$filename;
             $path = $file->move($fichier, $filename);
-            // Delete old video file if checkbox is checked
             if ($request->has('delete_video') && $request->input('delete_video')) {
                 $old_file = public_path('/assets/films/videos/') . $movie->video;
                 if (file_exists($old_file)) {
@@ -144,28 +133,15 @@ class MovieController extends Controller
         }
     
         // Update image files
-        if (!empty($file2 = $request->file('image'))) {
-            $extension = $file2->getClientOriginalExtension();
-            $filename = 'image_' . uniqid() . '_'.$movie->id;
-            $fichier2 = public_path('/assets/films/couvertures');
-            $image = (new ImageManager)->make($file2);
-            $image_small = $image->resize(320, 180);
-            $image_small_filename = $filename . '_small';
-            $image_small->save($fichier2 . '/' . $image_small_filename.'_'. $image_small->getWidth() .'x'. $image_small->getHeight().'.'.$extension);
-            $image_sizes = $image_small_filename .'_'. $image_small->getWidth() .'x'. $image_small->getHeight().'.'.$extension;
-            $image_large = $image->resize(1280, 720);
-            $image_large_filename = $filename . '_large';
-            $image_large->save($fichier2 . '/' . $image_large_filename.'_'. $image_small->getWidth() .'x'. $image_small->getHeight().'.'.$extension);
-            $image_sizes .= ',' . $image_large_filename .'_'. $image_large->getWidth() .'x'. $image_large->getHeight().'.'.$extension;
-            $movie->image = $image_sizes;
-            // Delete old image files if checkbox is checked
+        if (!empty($file = $request->file('image'))) {
+            $filename = 'image-' . time() . '.' . $file->getClientOriginalExtension();
+            $fichier=public_path('/assets/films/couvertures');
+            $movie->image=$filename;
+            $path = $file->move($fichier, $filename);
             if ($request->has('delete_image') && $request->input('delete_image')) {
-                $old_files = explode(',', $movie->image);
-                foreach ($old_files as $old_file) {
-                    $old_file = public_path('/assets/films/couvertures/') . $old_file;
-                    if (file_exists($old_file)) {
-                        unlink($old_file);
-                    }
+                $old_file = public_path('/assets/films/couvertures/') . $movie->image;
+                if (file_exists($old_file)) {
+                    unlink($old_file);
                 }
                 $movie->image = null;
             }
@@ -180,7 +156,7 @@ class MovieController extends Controller
 
     public function addMovie()
     {
-        $categories=Categorie::all();
+        $categories=Categorie::all(); 
         $langues=Langue::all();
         $users = User::where('user_type', 'producteur')->get();
         return view('dashboard.movie.addMovie', compact('categories','langues','users'));
@@ -254,5 +230,17 @@ class MovieController extends Controller
         $langues=Langue::all();
 
         return view('frontend.showdetails', compact('categories','langues','movie'));
+    }
+
+    public function deleteMovie($id) {
+        $movie = Movies::findOrFail($id);
+        if ($movie->image && file_exists(public_path('/assets/films/couvertures/' . $movie->image))) {
+            unlink(public_path('/assets/films/couvertures/' . $movie->image));
+        }
+        if ($movie->video && file_exists(public_path('/assets/films/videos/' . $movie->video))) {
+            unlink(public_path('/assets/films/videos/' . $movie->video));
+        }
+        $movie->delete();
+        return redirect('/dashboards/movie-list')->with('success', 'Le film a été supprimé avec succès');
     }
 }

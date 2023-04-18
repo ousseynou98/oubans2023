@@ -18,43 +18,55 @@
                             <div class="row">
                                <div class="col-md-6">
                                   <div class="form-group">
-                                     <label>Username</label>
-                                     <input type="text" class="form-control mb-0" name="user_name" value="{{old('user_name')}}" id="username" required autocomplete="off" placeholder="Enter username ">
+                                     <label>Nom d'utilisateur</label>
+                                     <input type="text" class="form-control mb-0" name="user_name" value="{{old('user_name')}}" id="username" required autocomplete="off" placeholder="Nom d'utilisateur ">
                                   </div>
                                </div>
                                <div class="col-md-6">
                                   <div class="form-group">  
-                                     <label>E-mail</label>                               
-                                     <input type="email" class="form-control mb-0" name="email" value="{{old('email')}}" id="email" required autocomplete="off" placeholder=" Enter email">
+                                     <label>Email</label>                               
+                                     <input type="email" class="form-control mb-0" name="email" value="{{old('email')}}" id="email" required autocomplete="off" placeholder="Email">
                                   </div>
                                </div>
                                <div class="col-md-6">
                                   <div class="form-group">
-                                     <label>First Name</label>
-                                     <input type="text" class="form-control mb-0" name="first_name" value="{{old('first_name')}}"  required  autocomplete="off" placeholder="Enter First Name ">
+                                     <label>Prénom</label>
+                                     <input type="text" class="form-control mb-0" name="first_name" value="{{old('first_name')}}"  required  autocomplete="off" placeholder="Prénom ">
                                   </div>
                                </div>
                                <div class="col-md-6">
                                   <div class="form-group">  
-                                     <label>Last Name</label>                               
-                                     <input type="text" class="form-control mb-0" name="last_name" value="{{old('last_name')}}" id="lastname" required autocomplete="off" placeholder=" Enter Last Name">
+                                     <label>Nom</label>                               
+                                     <input type="text" class="form-control mb-0" name="last_name" value="{{old('last_name')}}" id="lastname" required autocomplete="off" placeholder="Nom">
                                   </div>
                                </div>
                                <div class="col-md-6">
                                   <div class="form-group">   
-                                     <label>Password</label>                              
-                                     <input type="password" class="form-control mb-0" name="password" required autocomplete="new-password" placeholder=" Enter Password">
+                                     <label>Mot de passe</label>                              
+                                     <input type="password" class="form-control mb-0" name="password" required autocomplete="new-password" placeholder="Mot de passe">
                                   </div>
                                </div>
                                <div class="col-md-6">
                                   <div class="form-group"> 
-                                     <label>Repeat Password</label>                                
-                                     <input type="password" class="form-control mb-0" name="password_confirmation" required autocomplete="off" placeholder=" Confirm Password">
+                                     <label>Confirmer mot de passe</label>                                
+                                     <input type="password" class="form-control mb-0" name="password_confirmation" required autocomplete="off" placeholder="Confirmer mot de passe">
+                                  </div>
+                               </div>
+                               <div class="col-md-6">
+                                  <div class="form-group"> 
+                                     <label>Profil</label>
+                                                                     
+                                       <select name="role" class="form-control">
+                                          <option value="" >--Choisir profil</option>  
+                                          @foreach ($roles as $key => $value)
+                                             <option value="{{ $value->name }}">{{ $value->title }}</option>
+                                          @endforeach
+                                       </select>
                                   </div>
                                </div>
                                
                             </div>
-                            <div class="custom-control custom-radio mt-2">
+                            <!-- <div class="custom-control custom-radio mt-2">
                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
                                <label class="custom-control-label" for="customRadio1">Premium-$39 / 3 Months
                                   with a 5 day free trial</label>
@@ -66,12 +78,12 @@
                              <div class="custom-control custom-radio mt-2">
                                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
                                <label class="custom-control-label" for="customRadio3">Free-Free</label>
-                             </div>
+                             </div> -->
                              
-                             <button type="submit" class="btn btn-primary my-2">Sign Up</button>     
+                             <button type="submit" class="btn btn-primary my-2">S'inscrire</button>     
                             <div class="mt-3 ">
                                <div class="d-flex justify-content-center links">
-                               Already have an Account &nbsp;<a href="{{route('login')}}" class="text-primary">Sign In</a>
+                               Vous avez déjà un compte &nbsp;<a href="{{route('login')}}" class="text-primary">S'identifier</a>
                                </div>
                                     
                          </form>

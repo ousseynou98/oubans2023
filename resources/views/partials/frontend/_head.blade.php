@@ -1,4 +1,4 @@
-<link rel="shortcut icon" href="{{ asset('frontend/images/favicon.ico') }}"/>
+<link rel="shortcut icon" href="{{ asset('frontend/images/icon.png') }}"/>
 <link rel="stylesheet" href="{{ asset('frontend/css/flatpickr.min.css') }}"/>
 <link rel="stylesheet" href="{{ asset('frontend/css/bootstrap.min.css') }}"/>
 <link rel="stylesheet" href="{{ asset('frontend/css/all.min.css')}}"/> 
@@ -19,3 +19,4 @@
 <link rel='stylesheet' href="{{ asset('frontend/css/responsive.css') }}" />
 <link rel='stylesheet' href="{{ asset('frontend/css/variable.css') }}" />
 <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
