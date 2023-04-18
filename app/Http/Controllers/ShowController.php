@@ -210,4 +210,23 @@ class ShowController extends Controller
     {
         //
     }
+
+
+    public function frontSeries()
+    {
+        # code...
+
+        $categories = $this->cat->all();
+        $shows = $this->show->join($this->cat->getTable(), $this->cat->getTable().".id", "=", $this->show->getTable().".cat")
+        ->get([
+            $this->show->getTable().".*",
+            $this->cat->getTable().".id as cid",
+            $this->cat->getTable().".nom"
+        ]);
+        $this->user->all();
+
+        // dd($categories);
+
+        return view("frontend.show", compact("shows",   "categories"));
+    }
 }

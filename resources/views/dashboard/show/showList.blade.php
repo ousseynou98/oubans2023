@@ -51,6 +51,8 @@
                                         </td>
                                         <td>
                                         <div class="flex align-items-center list-user-action">
+                                            <a class="iq-bg-primary" data-toggle="Show Episodes" data-placement="top" title=""
+                                            data-original-title="View" href="{{route("episode.list",["id" => $show->id])}}"><i class="las la-photo-video"></i></a>
                                             <a class="iq-bg-warning" data-toggle="tooltip" data-placement="top" title=""
                                                 data-original-title="View" href="{{route("show.show",["id" => $show->id ])}}"><i class="lar la-eye"></i></a>
                                             <a class="iq-bg-success" data-toggle="tooltip" data-placement="top" title=""
