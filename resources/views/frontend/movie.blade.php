@@ -7,7 +7,7 @@
 
             @foreach($movies as $movie)
                <div>
-                  <a href="{{ route('showdetails', ['id' => $movie->id]) }}">
+                  <a href="{{ route('showmoviedetails', ['id' => $movie->id]) }}">
                         <div class="shows-img">
                            <?php
                            
@@ -67,13 +67,13 @@
                                              <img src="{{ asset('assets/films/couvertures/'.$movie->image) }}" class="img-fluid" alt="">
                                           </div>
                                           <div class="block-description">
-                                             <h6 class="iq-title"><a href="{{ route('showdetails', ['id' => $movie->id]) }}">{{ $movie->titre }}</a></h6>
+                                             <h6 class="iq-title"><a href="{{ route('showmoviedetails', ['id' => $movie->id]) }}">{{ $movie->titre }}</a></h6>
                                              <div class="movie-time d-flex align-items-center my-2">
                                                 <!-- <div class="badge badge-secondary p-1 mr-2">5+</div> -->
                                                 <span class="text-white">{{ $movie->duree }}</span>
                                              </div>
                                              <div class="hover-buttons">
-                                                <a href="{{ route('showdetails', ['id' => $movie->id]) }}">
+                                                <a href="{{ route('showmoviedetails', ['id' => $movie->id]) }}">
                                                    <span class="btn btn-hover"><i class="fa fa-play mr-1" aria-hidden="true"></i>
                                                       Visionner
                                                    </span>

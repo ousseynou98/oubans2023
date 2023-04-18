@@ -20,3 +20,4 @@
 <link rel='stylesheet' href="{{ asset('frontend/css/variable.css') }}" />
 <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://paytech.sn/cdn/paytech.min.css">

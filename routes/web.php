@@ -1,18 +1,20 @@
 <?php
 
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\FrontendController;
-use App\Http\Controllers\Security\RolePermission;
-use App\Http\Controllers\Security\RoleController;
-use App\Http\Controllers\Security\PermissionController;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ShowController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\MovieController;
-use App\Http\Controllers\ShowController;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SliderController;
-
-
+use Symfony\Component\Console\Input\Input;
 use App\Http\Controllers\EpisodeController;
+use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\PurchaseController;
+use App\Http\Controllers\DashboardController;
+
+
+use App\Http\Controllers\Security\RoleController;
+use App\Http\Controllers\Security\RolePermission;
+use App\Http\Controllers\Security\PermissionController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -54,12 +56,15 @@ Route::group(['prefix' => ''], function() {
   Route::get('/settings', [FrontendController::class, 'settings'])->name('frontend.settings');
   Route::get('/forgotpassword', [FrontendController::class, 'forgotpassword'])->name('frontend.forgotpassword');
   Route::get('/moviedetails', [FrontendController::class, 'moviedetails'])->name('frontend.moviedetails');
-  Route::get('showdetails/{id}', [MovieController::class, 'showdetails'])->name('showdetails');
+  Route::get('showmoviedetails/{id}', [MovieController::class, 'showdetails'])->name('showmoviedetails');
   //Route::get('movie-edit/{id}', [MovieController::class, 'update'])->name('dashboard.editMovie');
   Route::get('/showsingle', [FrontendController::class, 'showsingle'])->name('frontend.showsingle');
   Route::get('/watchvideo', [FrontendController::class, 'watchvideo'])->name('frontend.watchvideo');
   Route::get('/blog', [FrontendController::class, 'blog'])->name('frontend.blog');
   Route::get('/blogdetails', [FrontendController::class, 'blogdetails'])->name('frontend.blogdetails');
+  Route::post('/validation', [PurchaseController::class, 'post'])->name('validation');
+
+  
 
 });
 
