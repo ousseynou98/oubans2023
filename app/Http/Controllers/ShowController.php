@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Categorie;
+use App\Models\Episode;
 use App\Models\Show;
 use Illuminate\Http\Request;
 use App\Models\User;
@@ -13,12 +14,15 @@ class ShowController extends Controller
     private $cat ;
     private $show ;
     private $user ;
+    private $episode ;
+
 
 
     public function __construct() {
 
         $this->cat = new Categorie();
         $this->show = new Show();
+        $this->episode = new Episode();
         $this->user = new User();
 
     }
@@ -228,5 +232,52 @@ class ShowController extends Controller
         // dd($categories);
 
         return view("frontend.show", compact("shows",   "categories"));
+    }
+    public function showdetails($id)
+    {
+
+        $show =  $this->show
+        ->join($this->cat->getTable(), $this->cat->getTable().".id", "=", $this->show->getTable().".cat")
+        ->join("users", "users.id", "=", $this->show->getTable().".producteur")
+        ->findOrFail($id);
+
+        $episodes = $this->episode
+        ->join($this->show->getTable(), $this->show->getTable().".id", "=", $this->episode->getTable().".serie")
+        ->join($this->cat->getTable(), $this->cat->getTable().".id", "=", $this->show->getTable().".cat")
+        ->join("users", "users.id", "=", $this->show->getTable().".producteur")
+        ->where($this->episode->getTable().".serie", "=", $id)->get([
+            $this->episode->getTable().".*",
+            $this->episode->getTable().".id as eid",
+            $this->show->getTable().".*",
+            $this->cat->getTable().".*",
+            "users.*",
+            "users.id as uid"
+        ]);
+        // dd($episodes);
+        // return view("dashboard.show.show-details", compact("show"));
+        # code...
+        return view("frontend.showdetails", compact("show", "episodes"));
+    }
+
+    public function watchShow($show, $episode)
+    {
+        # code...
+        // $show =  $this->show
+        // ->join($this->cat->getTable(), $this->cat->getTable().".id", "=", $this->show->getTable().".cat")
+        // ->join("users", "users.id", "=", $this->show->getTable().".producteur")
+        // ->findOrFail($show);
+        // dd($episode);
+        $episodes = $this->episode
+        ->join($this->show->getTable(), $this->show->getTable().".id", "=", $this->episode->getTable().".serie")
+        ->join($this->cat->getTable(), $this->cat->getTable().".id", "=", $this->show->getTable().".cat")
+        ->join("users", "users.id", "=", $this->show->getTable().".producteur")
+        ->where([
+                [$this->episode->getTable().".serie", "=", $show],
+                [$this->episode->getTable().".id", "=", $episode]
+                ])
+        ->get();
+
+        // dd($episodes);
+        return view("frontend.watchshow", compact("show", "episodes"));
     }
 }

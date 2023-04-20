@@ -15,6 +15,8 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Security\RoleController;
 use App\Http\Controllers\Security\RolePermission;
 use App\Http\Controllers\Security\PermissionController;
+use Psy\Command\ShowCommand;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -57,6 +59,9 @@ Route::group(['prefix' => ''], function() {
   Route::get('/forgotpassword', [FrontendController::class, 'forgotpassword'])->name('frontend.forgotpassword');
   Route::get('/moviedetails', [FrontendController::class, 'moviedetails'])->name('frontend.moviedetails');
   Route::get('showmoviedetails/{id}', [MovieController::class, 'showdetails'])->name('showmoviedetails');
+  Route::get('showdetails/{id}', [ShowController::class, 'showdetails'])->name('frontend.showdetails');
+  Route::get('watchshow/{show}/{episode}', [ShowController::class, 'watchShow'])->name('frontend.watchshow');
+
   //Route::get('movie-edit/{id}', [MovieController::class, 'update'])->name('dashboard.editMovie');
   Route::get('/showsingle', [FrontendController::class, 'showsingle'])->name('frontend.showsingle');
   Route::get('/watchvideo', [FrontendController::class, 'watchvideo'])->name('frontend.watchvideo');
@@ -101,7 +106,6 @@ Route::group(['prefix' => 'dashboards','middleware' => 'auth'], function() {
   Route::get('/list-show', [ShowController::class, 'index'])->name('show.list');
   Route::get('/edit-show/{id}', [ShowController::class, 'edit'])->name('show.edit');
   Route::post('/update-show/{id}', [ShowController::class, 'update'])->name('show.update');
-
   Route::get('/detail-show/{id}', [ShowController::class, 'show'])->name('show.show');
 
 

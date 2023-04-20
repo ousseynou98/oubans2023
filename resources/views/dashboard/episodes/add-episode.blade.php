@@ -16,7 +16,7 @@
                                     <input type="text" class="form-control" placeholder="Title" name="title">
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <input type="number" class="form-control" placeholder="Duration" name="duration">
+                                    <input type="time" class="form-control" placeholder="Duration" name="duration">
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <input type="number" class="form-control" placeholder="Saison" name="season">

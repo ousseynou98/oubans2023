@@ -5,7 +5,7 @@
         {{-- @dd($shows) --}}
                 @foreach ($shows as $show)
                 <div>
-                    <a href="{{route('frontend.showdetails')}}">
+                    <a href="{{route('frontend.showdetails', ["id"=>$show->id])}}">
                     <div class="shows-img">
                         <img src="{{asset('images/'.$show->img_url)}}" class="w-100" alt="">
                         <div class="shows-content">
@@ -22,7 +22,7 @@
 
 
                {{-- <div>
-                  <a href="{{route('frontend.showdetails')}}">
+                  <a href="{{route('frontend.showdetails', ["id"=>$show->id])}}">
                      <div class="shows-img">
                         <img src="{{asset('frontend/images/shows-banner/show-2.jpg')}}" class="w-100" alt="">
                         <div class="shows-content">
@@ -36,7 +36,7 @@
                   </a>
                </div> --}}
                {{-- <div>
-                  <a href="{{route('frontend.showdetails')}}">
+                  <a href="{{route('frontend.showdetails', ["id"=>$show->id])}}">
                      <div class="shows-img">
                         <img src="{{asset('frontend/images/shows-banner/show-3.jpg')}}" class="w-100" alt="">
                         <div class="shows-content">
@@ -93,13 +93,13 @@
                                           <img src="{{asset('images/'.$show->img_url)}}" class="img-fluid" alt="">
                                        </div>
                                        <div class="block-description">
-                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails')}}">{{$show->name}}</a></h6>
+                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails', ["id"=>$show->id])}}">{{$show->name}}</a></h6>
                                           <div class="movie-time d-flex align-items-center my-2">
                                              <div class="badge badge-secondary p-1 mr-2">15+</div>
                                              <span class="text-white">2 Seasons</span>
                                           </div>
                                           <div class="hover-buttons">
-                                             <a href="{{route('frontend.showdetails')}}" role="button" class="btn btn-hover iq-button" tabindex="0">
+                                             <a href="{{route('frontend.showdetails', ["id"=>$show->id])}}" role="button" class="btn btn-hover iq-button" tabindex="0">
                                           <i class="fa fa-play mr-1" aria-hidden="true"></i>
                                           Play Now
                                           </a>
@@ -136,13 +136,13 @@
                                           <img src="{{asset('frontend/images/tvthrillers/02.jpg')}}" class="img-fluid" alt="">
                                        </div>
                                        <div class="block-description">
-                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails')}}">My True Friends</a></h6>
+                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails', ["id"=>$show->id])}}">My True Friends</a></h6>
                                           <div class="movie-time d-flex align-items-center my-2">
                                              <div class="badge badge-secondary p-1 mr-2">7+</div>
                                              <span class="text-white">2 Seasons</span>
                                           </div>
                                           <div class="hover-buttons">
-                                             <a href="{{route('frontend.showdetails')}}" role="button" class="btn btn-hover iq-button" tabindex="0">
+                                             <a href="{{route('frontend.showdetails', ["id"=>$show->id])}}" role="button" class="btn btn-hover iq-button" tabindex="0">
                                           <i class="fa fa-play mr-1" aria-hidden="true"></i>
                                           Play Now
                                           </a>
@@ -178,13 +178,13 @@
                                           <img src="{{asset('frontend/images/tvthrillers/03.jpg')}}" class="img-fluid" alt="">
                                        </div>
                                        <div class="block-description">
-                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails')}}">Arrival 1999</a></h6>
+                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails', ["id"=>$show->id])}}">Arrival 1999</a></h6>
                                           <div class="movie-time d-flex align-items-center my-2">
                                              <div class="badge badge-secondary p-1 mr-2">11+</div>
                                              <span class="text-white">3 Seasons</span>
                                           </div>
                                           <div class="hover-buttons">
-                                             <a href="{{route('frontend.showdetails')}}" role="button" class="btn btn-hover iq-button" tabindex="0">
+                                             <a href="{{route('frontend.showdetails', ["id"=>$show->id])}}" role="button" class="btn btn-hover iq-button" tabindex="0">
                                           <i class="fa fa-play mr-1" aria-hidden="true"></i>
                                           Play Now
                                           </a>
@@ -220,13 +220,13 @@
                                           <img src="{{asset('frontend/images/tvthrillers/04.jpg')}}" class="img-fluid" alt="">
                                        </div>
                                        <div class="block-description">
-                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails')}}">Night Mare</a></h6>
+                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails', ["id"=>$show->id])}}">Night Mare</a></h6>
                                           <div class="movie-time d-flex align-items-center my-2">
                                              <div class="badge badge-secondary p-1 mr-2">18+</div>
                                              <span class="text-white">3 Seasons</span>
                                           </div>
                                           <div class="hover-buttons">
-                                             <a href="{{route('frontend.showdetails')}}" role="button" class="btn btn-hover iq-button" tabindex="0">
+                                             <a href="{{route('frontend.showdetails', ["id"=>$show->id])}}" role="button" class="btn btn-hover iq-button" tabindex="0">
                                           <i class="fa fa-play mr-1" aria-hidden="true"></i>
                                           Play Now
                                           </a>
@@ -262,13 +262,13 @@
                                           <img src="{{asset('frontend/images/tvthrillers/05.jpg')}}" class="img-fluid" alt="">
                                        </div>
                                        <div class="block-description">
-                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails')}}">The Marshal King</a></h6>
+                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails', ["id"=>$show->id])}}">The Marshal King</a></h6>
                                           <div class="movie-time d-flex align-items-center my-2">
                                              <div class="badge badge-secondary p-1 mr-2">17+</div>
                                              <span class="text-white">1 Season</span>
                                           </div>
                                           <div class="hover-buttons">
-                                             <a href="{{route('frontend.showdetails')}}" role="button" class="btn btn-hover iq-button" tabindex="0">
+                                             <a href="{{route('frontend.showdetails', ["id"=>$show->id])}}" role="button" class="btn btn-hover iq-button" tabindex="0">
                                           <i class="fa fa-play mr-1" aria-hidden="true"></i>
                                           Play Now
                                           </a>
@@ -318,7 +318,7 @@
                                           <img src="{{asset('frontend/images/tvthrillers/06.jpg')}}" class="img-fluid" alt="">
                                        </div>
                                        <div class="block-description">
-                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails')}}">Last Track</a></h6>
+                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails', ["id"=>$show->id])}}">Last Track</a></h6>
                                           <div class="movie-time d-flex align-items-center my-2">
                                              <div class="badge badge-secondary p-1 mr-2">19+</div>
                                              <span class="text-white">3 Seasons</span>
@@ -357,13 +357,13 @@
                                           <img src="{{asset('frontend/images/tvthrillers/07.jpg')}}" class="img-fluid" alt="">
                                        </div>
                                        <div class="block-description">
-                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails')}}">Dino Land</a></h6>
+                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails', ["id"=>$show->id])}}">Dino Land</a></h6>
                                           <div class="movie-time d-flex align-items-center my-2">
                                              <div class="badge badge-secondary p-1 mr-2">9+</div>
                                              <span class="text-white">2 Seasons</span>
                                           </div>
                                           <div class="hover-buttons">
-                                             <a href="{{route('frontend.showdetails')}}" role="button" class="btn btn-hover iq-button" tabindex="0">
+                                             <a href="{{route('frontend.showdetails', ["id"=>$show->id])}}" role="button" class="btn btn-hover iq-button" tabindex="0">
                                           <i class="fa fa-play mr-1" aria-hidden="true"></i>
                                           Play Now
                                           </a>
@@ -397,13 +397,13 @@
                                           <img src="{{asset('frontend/images/tvthrillers/08.jpg')}}" class="img-fluid" alt="">
                                        </div>
                                        <div class="block-description">
-                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails')}}">Mission Moon</a></h6>
+                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails', ["id"=>$show->id])}}">Mission Moon</a></h6>
                                           <div class="movie-time d-flex align-items-center my-2">
                                              <div class="badge badge-secondary p-1 mr-2">18+</div>
                                              <span class="text-white">3 Seasons</span>
                                           </div>
                                           <div class="hover-buttons">
-                                             <a href="{{route('frontend.showdetails')}}" role="button" class="btn btn-hover iq-button" tabindex="0">
+                                             <a href="{{route('frontend.showdetails', ["id"=>$show->id])}}" role="button" class="btn btn-hover iq-button" tabindex="0">
                                           <i class="fa fa-play mr-1" aria-hidden="true"></i>
                                           Play Now
                                           </a>
@@ -437,13 +437,13 @@
                                           <img src="{{asset('frontend/images/tvthrillers/03.jpg')}}" class="img-fluid" alt="">
                                        </div>
                                        <div class="block-description">
-                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails')}}">Arrival 1999</a></h6>
+                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails', ["id"=>$show->id])}}">Arrival 1999</a></h6>
                                           <div class="movie-time d-flex align-items-center my-2">
                                              <div class="badge badge-secondary p-1 mr-2">11+</div>
                                              <span class="text-white">3 Seasons</span>
                                           </div>
                                           <div class="hover-buttons">
-                                             <a href="{{route('frontend.showdetails')}}" role="button" class="btn btn-hover iq-button" tabindex="0">
+                                             <a href="{{route('frontend.showdetails', ["id"=>$show->id])}}" role="button" class="btn btn-hover iq-button" tabindex="0">
                                           <i class="fa fa-play mr-1" aria-hidden="true"></i>
                                           Play Now
                                           </a>
@@ -477,13 +477,13 @@
                                           <img src="{{asset('frontend/images/tvthrillers/05.jpg')}}" class="img-fluid" alt="">
                                        </div>
                                        <div class="block-description">
-                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails')}}">The Marshal King</a></h6>
+                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails', ["id"=>$show->id])}}">The Marshal King</a></h6>
                                           <div class="movie-time d-flex align-items-center my-2">
                                              <div class="badge badge-secondary p-1 mr-2">17+</div>
                                              <span class="text-white">1 Season</span>
                                           </div>
                                           <div class="hover-buttons">
-                                             <a href="{{route('frontend.showdetails')}}" role="button" class="btn btn-hover iq-button" tabindex="0">
+                                             <a href="{{route('frontend.showdetails', ["id"=>$show->id])}}" role="button" class="btn btn-hover iq-button" tabindex="0">
                                           <i class="fa fa-play mr-1" aria-hidden="true"></i>
                                           Play Now
                                           </a>
@@ -532,7 +532,7 @@
                                           <img src="{{asset('frontend/images/tvthrillers/01.jpg')}}" class="img-fluid" alt="">
                                        </div>
                                        <div class="block-description">
-                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails')}}">Day of Darkness</a></h6>
+                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails', ["id"=>$show->id])}}">Day of Darkness</a></h6>
                                           <div class="movie-time d-flex align-items-center my-2">
                                              <div class="badge badge-secondary p-1 mr-2">15+</div>
                                              <span class="text-white">2 Seasons</span>
@@ -571,13 +571,13 @@
                                           <img src="{{asset('frontend/images/tvthrillers/08.jpg')}}" class="img-fluid" alt="">
                                        </div>
                                        <div class="block-description">
-                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails')}}">Mission Moon</a></h6>
+                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails', ["id"=>$show->id])}}">Mission Moon</a></h6>
                                           <div class="movie-time d-flex align-items-center my-2">
                                              <div class="badge badge-secondary p-1 mr-2">18+</div>
                                              <span class="text-white">3 Seasons</span>
                                           </div>
                                           <div class="hover-buttons">
-                                             <a href="{{route('frontend.showdetails')}}" role="button" class="btn btn-hover iq-button" tabindex="0">
+                                             <a href="{{route('frontend.showdetails', ["id"=>$show->id])}}" role="button" class="btn btn-hover iq-button" tabindex="0">
                                           <i class="fa fa-play mr-1" aria-hidden="true"></i>
                                           Play Now
                                           </a>
@@ -611,13 +611,13 @@
                                           <img src="{{asset('frontend/images/tvthrillers/05.jpg')}}" class="img-fluid" alt="">
                                        </div>
                                        <div class="block-description">
-                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails')}}">The Marshal King</a></h6>
+                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails', ["id"=>$show->id])}}">The Marshal King</a></h6>
                                           <div class="movie-time d-flex align-items-center my-2">
                                              <div class="badge badge-secondary p-1 mr-2">17+</div>
                                              <span class="text-white">1 Season</span>
                                           </div>
                                           <div class="hover-buttons">
-                                             <a href="{{route('frontend.showdetails')}}" role="button" class="btn btn-hover iq-button" tabindex="0">
+                                             <a href="{{route('frontend.showdetails', ["id"=>$show->id])}}" role="button" class="btn btn-hover iq-button" tabindex="0">
                                           <i class="fa fa-play mr-1" aria-hidden="true"></i>
                                           Play Now
                                           </a>
@@ -651,13 +651,13 @@
                                           <img src="{{asset('frontend/images/tvthrillers/04.jpg')}}" class="img-fluid" alt="">
                                        </div>
                                        <div class="block-description">
-                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails')}}">Knight Mare</a></h6>
+                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails', ["id"=>$show->id])}}">Knight Mare</a></h6>
                                           <div class="movie-time d-flex align-items-center my-2">
                                              <div class="badge badge-secondary p-1 mr-2">18+</div>
                                              <span class="text-white">3 Seasons</span>
                                           </div>
                                           <div class="hover-buttons">
-                                             <a href="{{route('frontend.showdetails')}}" role="button" class="btn btn-hover iq-button" tabindex="0">
+                                             <a href="{{route('frontend.showdetails', ["id"=>$show->id])}}" role="button" class="btn btn-hover iq-button" tabindex="0">
                                           <i class="fa fa-play mr-1" aria-hidden="true"></i>
                                           Play Now
                                           </a>
@@ -691,7 +691,7 @@
                                        <img src="{{asset('frontend/images/tvthrillers/02.jpg')}}" class="img-fluid" alt="">
                                     </div>
                                     <div class="block-description">
-                                       <h6 class="iq-title"><a href="{{route('frontend.showdetails')}}">Friends</a></h6>
+                                       <h6 class="iq-title"><a href="{{route('frontend.showdetails', ["id"=>$show->id])}}">Friends</a></h6>
                                        <div class="movie-time d-flex align-items-center my-2">
                                           <div class="badge badge-secondary p-1 mr-2">14+</div>
                                           <span class="text-white">10 Seasons</span>

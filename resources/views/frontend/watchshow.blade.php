@@ -2,10 +2,10 @@
 
 <body>
     <div class="video-container iq-main-slider" >
-        <img src="{{asset("banners/".$show->banner_url)}}" alt="" srcset="">
-        {{-- <video id="myVideo" controls>
-           <source src="{{asset('episodes/'.$episodes[1]->filename)}}" type="video/mp4">
-        </video> --}}
+        {{-- <img src="{{asset("banners/".$show->banner_url)}}" alt="" srcset=""> --}}
+        <video id="myVideo" controls>
+           <source src="{{asset('episodes/'.$episodes[0]->filename)}}" type="video/mp4">
+        </video>
      </div>
      <!-- Banner End -->
      <!-- MainContent -->
@@ -20,7 +20,7 @@
                        <span class="trending-year">Lorem Ipsum is dummy text</span> -->
                     </div>
                     <button class="buy" onclick="buy(this)" data-item-id="88" >Acheter iphone (450000 XOF)</button>
-                    <p class="trending-dec w-100 mb-0"><br>{{$show->description}}</p>
+                    {{-- <p class="trending-dec w-100 mb-0"><br>{{$show->description}}</p> --}}
                     <br><br><br><br>
                      {{-- <ul class="list-inline p-0 mt-4 share-icons music-play-lists">
                        <li><span><i class="ri-add-line"></i></span></li>
@@ -46,7 +46,7 @@
                   <div class="row">
                      <div class="col-sm-12 overflow-hidden">
                         <div class="iq-main-header d-flex align-items-center justify-content-between">
-                           <h4 class="main-title">Popular Shows</h4>
+                           <h4 class="main-title">Episodes</h4>
                         </div>
                         <div class="favorites-contens">
                            <ul class="favorites-slider list-inline  row p-0 mb-0 iq-rtl-direction ">
@@ -59,13 +59,13 @@
                                           <img src="{{asset('images/'.$episode->img_ep)}}" class="img-fluid" alt="">
                                        </div>
                                        <div class="block-description">
-                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails', ["id"=>$episode->eid])}}">{{$episode->title}}</a></h6>
+                                          <h6 class="iq-title"><a href="{{route('frontend.showdetails', ["id"=>$episode->id])}}">{{$episode->title}}</a></h6>
                                           <div class="movie-time d-flex align-items-center my-2">
                                              <div class="badge badge-secondary p-1 mr-2">15+</div>
                                              <span class="text-white">{{$episode->duration}}</span>
                                           </div>
                                           <div class="hover-buttons">
-                                             <a href="{{route('frontend.watchshow', ["show"=>$episode->serie,"episode"=>$episode->eid])}}" role="button" class="btn btn-hover iq-button" tabindex="0">
+                                             <a href="{{route('frontend.showdetails', ["id"=>$episode->id])}}" role="button" class="btn btn-hover iq-button" tabindex="0">
                                           <i class="fa fa-play mr-1" aria-hidden="true"></i>
                                           Play Now
                                           </a>
